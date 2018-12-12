@@ -39,9 +39,6 @@ const Body = styled.div`
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0.6rem;
   font-weight: normal;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 `
 
 const Author = styled.span`
@@ -54,15 +51,11 @@ const Author = styled.span`
   }
 `
 
-const Blog = ({ post: { title, date, body, link, author } }) => (
-  <Link
-    to={link}
-    state={{ post: { title, date, body, link, author } }}
-    style={{ textDecoration: 'none', color: 'black' }}
-  >
+const Blog = ({ title, date, excerpt, link, author }) => (
+  <Link to={link} style={{ textDecoration: 'none', color: 'black' }}>
     <Container>
       <Title>{title}</Title>
-      <Body>{body}</Body>
+      <Body>{excerpt}</Body>
       <Date>
         <Author>{author}</Author> on {date}
       </Date>

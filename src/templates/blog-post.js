@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { graphql } from 'gatsby'
 
 const Container = styled.div`
   display: flex;
@@ -34,35 +35,47 @@ const Body = styled.div`
 const Author = styled.span`
   color: black;
   border-bottom: 2px #7776 solid;
+  cursor: pointer;
   &:hover {
     background: #7776;
     border-bottom: none;
     border-bottom: 2px transparent solid;
   }
 `
-const Blogs = ({
-  location: {
-    state: {
-      post: { title, date, body, author },
-    },
-  },
-}) => (
-  <Layout
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-    }}
-  >
-    <SEO title="Blogs" />
-    <Container>
-      <Date>
-        <Author>{author}</Author> on {date}
-      </Date>
-      <Title>{title}</Title>
-      <Body>{body}</Body>
-    </Container>
-  </Layout>
-)
+const Blogs = ({ data }) => {
+  const post = data.markdownRemark
+  const { author, date, title } = post.frontmatter
+  return (
+    <Layout
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <SEO title={title} />
+      <Container>
+        <Date>
+          <Author>{author}</Author> on {date}
+        </Date>
+        <Title>{title}</Title>
+        <Body dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Container>
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        date(formatString: "DD MMMM, YYYY")
+        author
+      }
+    }
+  }
+`
 
 export default Blogs
