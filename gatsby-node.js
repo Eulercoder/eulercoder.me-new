@@ -11,12 +11,22 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `content/_posts` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: '/blogs' + slug,
-    })
+    const re = /content\/_posts/
+    if (re.test(node.fileAbsolutePath)) {
+      const slug = createFilePath({ node, getNode, basePath: `content/_posts` })
+      createNodeField({
+        node,
+        name: `slug`,
+        value: '/blogs' + slug,
+      })
+    } else {
+      const slug = createFilePath({ node, getNode, basePath: `projects` })
+      createNodeField({
+        node,
+        name: `slug`,
+        value: '/projects' + slug,
+      })
+    }
   } else if (node.internal.type === `AuthorYaml`) {
     const slug = `/contributors/${node.id.toLowerCase().replace(' ', '-')}`
     createNodeField({
@@ -34,6 +44,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            fileAbsolutePath
             fields {
               slug
             }
@@ -52,13 +63,24 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.js`),
-      context: {
-        slug: node.fields.slug,
-      },
-    })
+    const re = /content\/_posts/
+    if (re.test(node.fileAbsolutePath)) {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/blog-post.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    } else {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/project-page.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    }
   })
   result.data.allAuthorYaml.edges.forEach(({ node }) => {
     createPage({
