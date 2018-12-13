@@ -17,6 +17,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: '/blogs' + slug,
     })
+  } else if (node.internal.type === `AuthorYaml`) {
+    const slug = `/contributors/${node.id.toLowerCase().replace(' ', '-')}`
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
   }
 }
 
@@ -33,6 +40,16 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allAuthorYaml {
+        edges {
+          node {
+            avatar
+            fields {
+              slug
+            }
+          }
+        }
+      }
     }
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -41,6 +58,16 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         slug: node.fields.slug,
+      },
+    })
+  })
+  result.data.allAuthorYaml.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/contributor-page.js`),
+      context: {
+        slug: node.fields.slug,
+        avatar: node.avatar,
       },
     })
   })

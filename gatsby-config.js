@@ -5,6 +5,9 @@ module.exports = {
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@gatsbyjs',
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': `AuthorYaml`,
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
@@ -18,12 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogs`,
-        path: `${__dirname}/content/_posts/`,
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
+    `gatsby-transformer-yaml`,
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
