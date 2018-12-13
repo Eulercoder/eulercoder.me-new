@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { graphql, Link } from 'gatsby'
@@ -127,7 +127,6 @@ const Right = styled(StyledNext)`
 `
 
 const Project = ({ data, pageContext: { prev, next } }) => {
-  console.log(prev, next)
   const project = data.markdownRemark
   const {
     title,
