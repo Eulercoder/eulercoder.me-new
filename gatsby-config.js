@@ -21,6 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `blogs`,
+        path: `${__dirname}/content/_posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `content`,
         path: `${__dirname}/content/`,
       },
@@ -29,6 +36,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
     'gatsby-plugin-sharp',
+    'gatsby-plugin-svgr',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

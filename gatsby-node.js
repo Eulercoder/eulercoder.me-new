@@ -43,7 +43,6 @@ exports.createPages = async ({ graphql, actions }) => {
       allAuthorYaml {
         edges {
           node {
-            avatar
             fields {
               slug
             }
@@ -67,7 +66,6 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/contributor-page.js`),
       context: {
         slug: node.fields.slug,
-        avatar: node.avatar,
       },
     })
   })

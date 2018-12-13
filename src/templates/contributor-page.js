@@ -64,7 +64,7 @@ const ContributorPage = ({ data }) => {
     <Layout>
       <SEO title="Contributor" keywords={['gatsby', 'application', 'react']} />
       <Author>
-        <Img fixed={data.avatar.childImageSharp.fixed} />
+        <Img fixed={author.avatar.childImageSharp.fixed} />
         <h2>{author.id}</h2>
         <p>{author.bio}</p>
       </Author>
@@ -85,7 +85,7 @@ const ContributorPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!, $avatar: String!) {
+  query($slug: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date, fields___slug] }
     ) {
@@ -108,12 +108,11 @@ export const query = graphql`
     authorYaml(fields: { slug: { eq: $slug } }) {
       bio
       id
-      avatar
-    }
-    avatar: file(relativePath: { eq: $avatar }) {
-      childImageSharp {
-        fixed(width: 60, height: 60) {
-          ...GatsbyImageSharpFixed
+      avatar {
+        childImageSharp {
+          fixed(width: 60, height: 60) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
