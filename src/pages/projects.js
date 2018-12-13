@@ -81,7 +81,7 @@ const ProjectPage = ({ data }) => (
             fields: { slug },
           },
         }) => (
-          <Project key={githubURL}>
+          <Project key={githubURL + title}>
             <StyledLink to={slug}>
               <StyledImg fixed={screenshot.childImageSharp.fixed} />
               <h4>{title}</h4>
@@ -89,10 +89,10 @@ const ProjectPage = ({ data }) => (
             <div>
               <p>{description}</p>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <a href={githubURL} target="_blank">
+                <a href={githubURL} target="_blank" rel="noopener noreferrer">
                   <GitHub height="20px" />
                 </a>
-                <a href={projectURL} target="_blank">
+                <a href={projectURL} target="_blank" rel="noopener noreferrer">
                   <Launch height="24px" />
                 </a>
               </div>
@@ -106,7 +106,10 @@ const ProjectPage = ({ data }) => (
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
+    ) {
       edges {
         node {
           fields {
