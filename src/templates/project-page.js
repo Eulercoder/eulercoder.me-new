@@ -8,6 +8,10 @@ import Img from 'gatsby-image'
 
 import { ReactComponent as GitHub } from '../icons/github.svg'
 import { ReactComponent as Launch } from '../icons/launch.svg'
+import { ReactComponent as ArrowRight } from '../icons/arrow_right.svg'
+import { ReactComponent as ArrowLeft } from '../icons/arrow_left.svg'
+import { ReactComponent as Linkedin } from '../icons/linkedin.svg'
+import { ReactComponent as Twitter } from '../icons/twitter.svg'
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +35,16 @@ const Creator = styled.h3`
   font-size: 1.1rem;
   margin-left: 24px;
   color: rebeccapurple;
+  display: flex;
+  ${'' /* flex-direction: column; */}
+  & svg {
+    cursor: pointer;
+    margin: 0 6px 0 0px;
+  }
+`
+
+const CreatorName = styled.div`
+  margin: 0 1.2rem 0px 0px;
 `
 
 const Body = styled.div`
@@ -68,14 +82,18 @@ const Buttons = styled.div`
   }
 `
 
-const Project = ({ data }) => {
+const Project = ({ data, pageContext: { prev, next } }) => {
   const project = data.markdownRemark
+  console.log(prev, next)
   const {
     title,
     screenshot,
     githubURL,
     projectURL,
     createdBy,
+    linkedIn,
+    github,
+    twitter,
   } = project.frontmatter
   return (
     <Layout
@@ -88,16 +106,39 @@ const Project = ({ data }) => {
       <SEO title={title} />
       <Container>
         <Title>{title}</Title>
-        <Creator>{createdBy}</Creator>
+        <Creator>
+          <CreatorName>{createdBy}</CreatorName>
+          <div>
+            {github && (
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <GitHub height="22px" />
+              </a>
+            )}
+            {twitter && (
+              <a href={twitter} target="_blank" rel="noopener noreferrer">
+                <Twitter height="22px" fill="#1DA1F2" />
+              </a>
+            )}
+            {linkedIn && (
+              <a href={linkedIn} target="_blank" rel="noopener noreferrer">
+                <Linkedin height="22px" fill="#0077B5" />
+              </a>
+            )}
+          </div>
+        </Creator>
         <Buttons>
-          <a href={githubURL} target="_blank">
-            <GitHub height="22px" />
-            <div>Source</div>
-          </a>
-          <a href={projectURL} target="_blank">
-            <Launch height="24px" />
-            <div>Visit Site</div>
-          </a>
+          {githubURL && (
+            <a href={githubURL} target="_blank" rel="noopener noreferrer">
+              <GitHub height="22px" />
+              <div>Source</div>
+            </a>
+          )}
+          {projectURL && (
+            <a href={projectURL} target="_blank" rel="noopener noreferrer">
+              <Launch height="24px" />
+              <div>Visit Site</div>
+            </a>
+          )}
         </Buttons>
         <Img
           fluid={screenshot.childImageSharp.fluid}
@@ -119,6 +160,9 @@ export const query = graphql`
         projectURL
         description
         createdBy
+        linkedIn
+        github
+        twitter
         screenshot {
           childImageSharp {
             fluid(maxWidth: 960) {
