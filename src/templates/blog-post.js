@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 const Container = styled.div`
   display: flex;
@@ -32,10 +32,11 @@ const Body = styled.div`
   font-weight: normal;
 `
 
-const Author = styled.span`
+const Author = styled(Link)`
   color: black;
   border-bottom: 2px #7776 solid;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     background: #7776;
     border-bottom: none;
@@ -56,7 +57,7 @@ const Blogs = ({ data }) => {
       <SEO title={title} />
       <Container>
         <Date>
-          <Author>{author}</Author> on {date}
+          <Author to={author.fields.slug}>{author.id}</Author> on {date}
         </Date>
         <Title>{title}</Title>
         <Body dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -72,7 +73,12 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
-        author
+        author {
+          fields {
+            slug
+          }
+          id
+        }
       }
     }
   }

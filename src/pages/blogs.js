@@ -18,7 +18,8 @@ const Blogs = ({ data }) => (
           date={node.frontmatter.date}
           excerpt={node.excerpt}
           link={node.fields.slug}
-          author={node.frontmatter.author}
+          authorLink={node.frontmatter.author.fields.slug}
+          author={node.frontmatter.author.id}
         />
       ))}
     </div>
@@ -34,7 +35,12 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            author
+            author {
+              fields {
+                slug
+              }
+              id
+            }
           }
           fields {
             slug

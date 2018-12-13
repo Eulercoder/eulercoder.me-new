@@ -49,18 +49,31 @@ const Author = styled.span`
     border-bottom: none;
     border-bottom: 2px transparent solid;
   }
+  & link {
+    text-decoration: none;
+  }
 `
 
-const Blog = ({ title, date, excerpt, link, author }) => (
-  <Link to={link} style={{ textDecoration: 'none', color: 'black' }}>
-    <Container>
-      <Title>{title}</Title>
-      <Body>{excerpt}</Body>
-      <Date>
-        <Author>{author}</Author> on {date}
-      </Date>
-    </Container>
-  </Link>
-)
+const Blog = ({ title, date, excerpt, link, author, authorLink }) => {
+  return (
+    <Link to={link} style={{ textDecoration: 'none', color: 'black' }}>
+      <Container>
+        <Title>{title}</Title>
+        <Body>{excerpt}</Body>
+        <Date>
+          <Author>
+            <Link
+              to={authorLink}
+              style={{ textDecoration: 'none', color: '#000' }}
+            >
+              {author}
+            </Link>
+          </Author>{' '}
+          on {date}
+        </Date>
+      </Container>
+    </Link>
+  )
+}
 
 export default Blog
