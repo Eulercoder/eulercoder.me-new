@@ -40,11 +40,6 @@ const Project = styled.div`
   & svg:hover {
     fill: rgba(140, 101, 179);
   }
-  &:hover {
-    & h4 {
-      color: rgba(140, 101, 179);
-    }
-  }
 `
 
 const StyledImg = styled(Img)`
@@ -62,6 +57,11 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: black;
+  &:hover {
+    & h4 {
+      color: rgba(140, 101, 179);
+    }
+  }
 `
 
 const ProjectPage = ({ data }) => (
