@@ -88,6 +88,7 @@ export const query = graphql`
   query($slug: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date, fields___slug] }
+      filter: { fileAbsolutePath: { regex: "/_posts/" } }
     ) {
       edges {
         node {
