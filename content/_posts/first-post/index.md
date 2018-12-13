@@ -1,5 +1,5 @@
 ---
-title: 'First Post'
+title: 'First Post is the best post in this blog'
 date: '2018-08-10'
 author: 'Author Last'
 ---

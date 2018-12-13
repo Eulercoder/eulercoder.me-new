@@ -1,7 +1,7 @@
 ---
-title: 'Second Post is the best post in this blog'
-date: '2018-09-10'
-author: 'Author Second'
+title: 'Third Post is the best post in this blog'
+date: '2018-09-19'
+author: 'Author Last'
 ---
 
 Gatsby does an incredible amount of cool stuff for you, automatically. This makes Gatsby an incredibly powerful, versatile tool. However, this broad depth of functionality can make it difficult to explain what Gatsby does in a concise and approachable way.
