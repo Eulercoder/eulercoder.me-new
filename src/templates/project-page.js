@@ -1,15 +1,14 @@
 import React from 'react'
 
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { ReactComponent as GitHub } from '../icons/github.svg'
 import { ReactComponent as Launch } from '../icons/launch.svg'
-import { ReactComponent as ArrowRight } from '../icons/arrow_right.svg'
-import { ReactComponent as ArrowLeft } from '../icons/arrow_left.svg'
+import { ReactComponent as Arrow } from '../icons/arrow.svg'
 import { ReactComponent as Linkedin } from '../icons/linkedin.svg'
 import { ReactComponent as Twitter } from '../icons/twitter.svg'
 
@@ -82,9 +81,54 @@ const Buttons = styled.div`
   }
 `
 
+const StyledNext = styled(Link)`
+  position: fixed;
+  top: 40%;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  & h4 {
+    color: black;
+    margin-bottom: 0.4rem;
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  & p {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: hsla(270, 6.8076334240000005%, 0%, 0.54);
+  }
+`
+const Left = styled(StyledNext)`
+  left: 20vw;
+  transform: rotate(-90deg);
+  text-align: right;
+  & svg {
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    & svg {
+      transform: rotate(-90deg) translate(5px);
+    }
+  }
+`
+
+const Right = styled(StyledNext)`
+  right: 20vw;
+  transform: rotate(90deg);
+  text-align: left;
+  & svg {
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    & svg {
+      transform: rotate(-90deg) translate(5px);
+    }
+  }
+`
+
 const Project = ({ data, pageContext: { prev, next } }) => {
-  const project = data.markdownRemark
   console.log(prev, next)
+  const project = data.markdownRemark
   const {
     title,
     screenshot,
@@ -101,10 +145,25 @@ const Project = ({ data, pageContext: { prev, next } }) => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        width: '60vw',
       }}
     >
       <SEO title={title} />
       <Container>
+        {next && (
+          <Left to={next.fields.slug}>
+            <Arrow fill="rebeccapurple" />
+            <h4>{next.frontmatter.title}</h4>
+            <p>{next.frontmatter.description}</p>
+          </Left>
+        )}
+        {prev && (
+          <Right to={prev.fields.slug}>
+            <Arrow fill="rebeccapurple" />
+            <h4>{prev.frontmatter.title}</h4>
+            <p>{prev.frontmatter.description}</p>
+          </Right>
+        )}
         <Title>{title}</Title>
         <Creator>
           <CreatorName>{createdBy}</CreatorName>
