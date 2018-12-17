@@ -22,26 +22,26 @@ const Container = styled.div`
     transform: translateY(0px);
   }
 `
-const Title = styled.h2`
+export const Title = styled.h2`
   margin-top: 1.6rem;
   margin-bottom: 1.05rem;
   font-family: 'Roboto', sans-serif;
   letter-spacing: -0.0075em;
   font-size: 1.51572rem;
 `
-const Date = styled.div`
+export const Date = styled.div`
   color: hsla(270, 6.8076334240000005%, 0%, 0.54);
   font-size: 0.94rem;
   margin-bottom: 2.1rem;
 `
-const Body = styled.div`
+export const Body = styled.div`
   font-size: 0.94rem;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0.6rem;
   font-weight: normal;
 `
 
-const Author = styled.span`
+export const Author = styled.span`
   color: black;
   border-bottom: 2px #7776 solid;
   &:hover {
