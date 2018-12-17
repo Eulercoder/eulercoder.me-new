@@ -27,6 +27,9 @@ const Header = ({ siteTitle }) => (
     style={{
       background: 'white',
       borderBottom: '1px #ccc solid',
+      position: 'fixed',
+      width: '100vw',
+      zIndex: 100,
     }}
   >
     <div
@@ -50,17 +53,21 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h2>
       <NavBar>
-        {['blogs', 'projects'].map(item => (
+        {[
+          { name: 'blogs', link: 'blogs' },
+          { name: 'projects', link: 'projects' },
+          { name: 'work with us', link: '/' },
+        ].map(item => (
           <NavLink
-            key={item}
-            to={`/${item}/`}
+            key={item.name}
+            to={`/${item.link}/`}
             getProps={props =>
               props.isCurrent && {
                 style: { borderBottom: '4px solid rebeccapurple' },
               }
             }
           >
-            {item.toUpperCase()}
+            {item.name.toUpperCase()}
           </NavLink>
         ))}
       </NavBar>
