@@ -1,58 +1,65 @@
 ---
-titile: 'Slack the evolution of messaging'
-author: 'vicky002'
-date: '2017-07-23'
-cover: 'assets/images/cover/slack.jpg'
+title: What Is The Ideal Time To Apply For Internships And Jobs
+date: 2017-04-09 14:58:08 Z
+author: vicky
+layout: post
+current: post
+comments: true
+navigation: true
+class: post-template
+cover: assets/images/cover/internship_first.jpg
+subclass: post
 ---
 
-In the past years, many messaging applications invaded the market, gaining lots of fans and offering many free features that almost destroyed the traditional SMS messaging. Messaging evolution has happened exponentially in the last two years.
+[In the last article](http://blog.eulercoder.me/p/ultimate-course.html), we read about this course on getting software engineering internship and jobs. The course contains series of articles on internships and jobs right from the preparation plan to the first day of the job. If you are visiting this page directly I'd suggest you go and check out [the roadmap for Software engineering jobs.](http://blog.eulercoder.me/p/ultimate-course.html) (Link to Roadmap)
 
-One of the biggest issues with introducing new apps to a community is adoption - it's just so hard to get people to adopt new things. Don't shake your head, us people in the tech community are no different. Try getting people in a high-tech engineering team to move from SVN to Git. Yeah, that's an exercise in futility.
+So let's get started!
 
-Well, I'm using Slack for multiple team communications since last 8 months and it's simply awesome! I have also built a couple of bots using Slack API.
+Many students ask me, what is the perfect time to apply for internships. So in this article we are going to discuss the ideal time and in which year of engineering you should look for an internship.
 
-Reasons why Slack is better
-Available on PC, Web and Mobile These services are ideal if you want to use the app while sat down at your computer, as well as on the go.
+#### **Ideal time for Internship**
 
-You don't need a Sim card to log in The app is not connected to your phone number, so you can use it on devices such as tablets without needing a Sim card.
+\*\*
 
-You can send documents
+\*\*Most of the big companies hire summer and winter interns both. Results indicate that 65-70% companies hire interns year-round and 35% employers hire 5+ interns. Students generally look for summer internships and most of the companies and startups offer summer internships. So overall summer internships are much more common than winter internships as winter vacation duration is quite short compared to summer vacation.
 
-Substantially smaller app size (iOS app) A smaller app size means that app will take up less space on your device. This leaves more space for other apps, as well as other data such as photos and music.
+So, The ideal time is the summer vacation and you'll have more weeks to spend at the company and learn more. Now let's talk about the year of engineering.
 
-You can stay invisible and switch off notifications You don't have to log out in order to appear offline. WhatsApp will send you a message if your data service is on, there is no way to stop messaging or go offline. I find this really irritating sometimes.
+As you all would be already knowing, students generally look for internships and do internships after 3rd year and before the final year (Winter). Many students (me included) do apply and intern in 2nd year as well. It totally depends on your knowledge and how strong is your resume. If you have done something, if you have achieved something in your 2nd year then definitely you should apply for internships in 2nd-year vacations.
+**
 
-Is a social network It is a social network, which has features such as commenting and tagging. This means you can share content quickly and easily and engage with a community.
+\*\***Final Words: \*\*_Best time to apply for an internship is the summer vacation mostly after 3rd year. If you have the knowledge and you are very good at something specific (Web development, UI, UX or any specific field), you can and you should look for an internship in your 2nd year as well. _
 
-More reliable web client WhatsApp web client constantly gets bogged down and needs to be refreshed. I often find myself not getting notifications messages. Slack Web app remains open with instant notifications.
+#### **And, Ideal time for jobs?**
 
-You can use channels to keep conversations separated.
+You can apply to jobs at any time. There is no particular month for jobs, if there are openings on the website then you can directly apply there so contact someone in the company for a referral.
 
-Better privacy Slack is designed for communication in teams and does not ask for permissions to access address book and uses strong encryption in its message format.
+If you are graduating this year and looking for jobs then, most companies start hiring right after completion of summer internships. Once their summer internship program ends, they start publishing New Grad jobs on their website. So, the ideal time for new grads to start applying is in August.
 
-Higher rated on the App Store
+#### What if I am late for an internship?
 
-4.5 vs 4 (WhatsApp) The app has a higher rating on Apple's store, showing the overall quality of the app and user satisfaction.
+Sometimes it happens that students target few specific company and deadline is already ended for that. If there are no internships mentioned on the website or it just says "Position is closed.". The best thing to do in such cases is to send a mail to the company attaching your resume and cover letter and, trying to convince them that you would be worth engaging as an intern. You have to show them you achievements, work and explain them why you can be a great intern.
 
-Apart from this I have also used HipChat, IRC, Campfire and many other messaging evolution and team communication apps. There is an impressive level of polished UX spinning every aspect of Slack that is matched by very few apps anywhere. Everything from the onboarding to the way mobile push notifications happen where you're AFK, to the way it atomically gives you discounts for inactive users is just incredibly well designed.
+**My story: **_I was looking for an \_internship_ at Slack, I really wanted to work there but no internship openings were mentioned on the website. So I had applied for the full-time job role from the jobs page and mentioned that I'm looking for an _internship_ and it worked! Later [I got a full-time job offer from Slack](http://eulercoder.me/blog/career/slack-experience-sf-and-silicon-valley) (article link). _So_, friends, everything works. It totally depends on how badly you want to achieve and get something. \_
 
-And yeah the integrations! which are where Slack makes everything else look like amateur hour. There are over hundreds turn key integrations, each of which is impeccably designed and offering comprehensive coverage of the service's features ranging from webhooks to full API access that gives you more granular control and customizability.
+\_ \_
 
-Imagine the delight of posting a link to a Google doc, then finding the content of the document indexed and available in search. This goes far beyond cosmetic, Slack is executing on the vision of being the actual go-to communication platform for a whole team, potentially taking a major bite out of email in a way few things have been able to in a professional setting.
+#### Conclusion
 
-Few features that can make Slack even better
-Show that someone is typing We should be able to see when someone is typing a reply in a channel, that can prevent confusion while discussing something.
+So final conclusion of this article,
 
-Send your location Send a stamp to someone with your current location. This saves a lot of messing around with directions. This may not be a great feature but obviously, it's good to have.
+- Ideal time
 
-Message delivered and seen User should be able to see when someone opened your message, so he/she knows whether or not it has been read yet. Well, this feature has its own views sometimes, I feel I don't want the user to see this whether I have read those messages or not so it can be something like if I hide read status, I shouldn't be able to check others too!
+  - For summer Internship: October - Feb, at the end of the third year or 2nd year.
 
-Contacts integration There should a way to quickly invite a phone contact to a particular channel, and the user will have only access to that particular group only. User has to use his/her email to join the Slack team. There will be really helpful.
+  * For Winter Internship: July - September
 
-If I talk about WhatsApp, With 1 Billion users, virtually everyone including your grandma is on WhatsApp now, and hence 'adoption' is really a big challenge.
+  - For full-time Job: Anytime
 
-Slack can be used for all team communication purposes. Universities and college students should try Slack. Slack is a lot more business orientated and that definitely shows whereas WhatsApp has the convenience factor for people. Give it a try and see what you think. Upload some gifs and create some custom emoji. Integrate with the services you already use. Explore what’s possible with the application and it will be hard to go back to vanilla IM again.
+  * New-Grad role: After August every year.
 
-The load’s of messaging apps flooding the market today and making the digital life of people more complicated than ever will leave only the best contenders in this IM app tussle.
+This is it. I hope you found this article helpful.
 
-What do you think? Post your comments below.
+Don't forget to subscribe to my mailing list (in the sidebar) to get articles of this series directly in your mailbox. And, if you liked this article, please share it with your friends. Let's help everyone in getting a good internship and job.
+
+Thank you!
