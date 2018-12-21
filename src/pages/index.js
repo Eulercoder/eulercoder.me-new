@@ -4,56 +4,208 @@ import SEO from '../components/seo'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { ReactComponent as ProgrammingBoy } from '../images/ProgrammingBoy.svg'
 
 import { Title, Date, Author, Body } from '../components/blog'
 
 const Container = styled.div`
-  background: rebeccapurple;
+  background: rgb(102,51,153);
+  background: linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
   color: white;
   height: 80vh;
-  padding: 0 20vw;
+  padding: 0 10vw;
+  @media (max-width: 800px) {
+    height: 75vh;
+  }
+  @media (max-width: 500px) {
+    height: 550px;
+  }
+  @media (max-width: 400px) {
+    height: 490px;
+  }
 `
 
 const NavBar = styled.div`
   text-transform: capitalize;
-  margin-left: 120px;
+  margin-left: 80px;
+  @media (max-width:1024px) {
+    display:none;
+  }
 `
+
 
 const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 36px;
   font-weight: light;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8437rem;
+  font-size: 0.7437rem;
   &:hover {
     color: #fff7;
   }
+  @media (max-width:1024px) {
+    display:none;
+  }
+`
+const MobileNavLink = styled(Link)`
+  display: flex;
+  color: #663399;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+`
+
+const MenuIcon= styled.div`
+ 
+  display: flex;
+  position:absolute;
+  flex-direction:column;
+  top:24px;
+  right:30px;
+  justify-content:flex-end;
+  padding: 14px;
+  align-items:center;
+  z-index: 999;
+ 
+`
+
+const MenuLine=  styled.div`
+ background:white;
+ border: 2px solid #663399;
+ padding: 3px;
+ width: 40px;
+`
+const Label = styled.label`
+   display:none;
+   @media (max-width:1024px) {
+    &.menulabel {
+      display:block;
+    }
+`
+
+const CheckBoxMenu = styled.input`
+&:checked ~ .mobilenavbar {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items:center;
+  background:white;
+  text-align:center;
+  padding: 60px 0px;
+  position:fixed;
+  top:0px;
+  width:100%;
+  height:100%;
+  z-index: 998;
+  }
+
+  &:checked ~ .menulabel {
+    display:block;
+    @media (max-width:1024px) {
+      &.menulabel {
+        display:block;
+      }
+    }
+   }
+  
+`
+
+const MobileNavbar = styled.div`
+    display:none;
+`
+
+const LandingSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+`
+
+const LandingImage = styled.div`
+  
+`
+
+const PBoy = styled(ProgrammingBoy)`
+ position:absolute;
+ max-width:60vw; 
+ bottom:130px;
+ right:40px;
+ @media (min-width: 1800px) {
+  bottom:200px;
+ }
+ @media(max-width: 1024px) {
+  max-width:90vw; 
+  bottom:270px;
+ }
+ @media (max-width: 900px) {
+  max-width: 60vw; 
+}
+ @media (max-width: 800px) {
+  position: static;
+  max-width: 100vw; 
+}
 `
 
 const Information = styled.div`
   background: white;
   color: black;
   display: grid;
-  grid-template-columns: repeat(3, 18vw);
+  grid-template-columns: 300px 300px 300px;
   align-items: center;
-  padding: 10vh 20vw;
   grid-gap: 28px;
+  padding: 10vh 20px;
+  justify-content:center;
+  grid-gap: 28px;
+  @media (max-width: 1200px) {
+    grid-template-columns: 300px 300px;
+    margin: auto;
+  }
+  
+  @media (max-width:900px) {
+    display:flex;
+    flex-direction:column;
+    margin: 10vw 10vw;
+    justify-content:center;
+    padding: 0px 0px;
+  }
+  
 `
 
 const Card = styled.div`
   width: 100%;
   height: 15vw;
-  border-radius: 1vw;
+  border-radius: 5px;
   will-change: transform;
   transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
   max-width: 300px;
   max-height: 240px;
   color: #fff;
-  &:hover {
-    transform: scale(1.03);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.08);
+ 
+  &.cards{
+    transition: all 0.1s linear;
+    position:relative;
+    top:0px;
+    height: 30vw;
+    &:hover {
+      top: -4px;
+      box-shadow: 0 16px 32px rgba(102,51,153, 0.1), 0 6px 12px rgba(102,51,153, 0.2);
+    }
+    &:active {
+      box-shadow: 0 16px 32px rgba(102,51,153, 0.02);
+    }
+    @media (max-width:1200px) {
+      max-width: 300px;
+      max-height: 240px;
+    }
+    @media (max-width:900px) {
+      margin: 20px 0px;
+    }
+
   }
 `
 
@@ -71,7 +223,7 @@ const StyledImg = styled(Img)`
   top: 0;
   left: 0;
   z-index: -10;
-  border-radius: 1vh;
+ 
 `
 
 const BlogsInfo = styled.div`
@@ -88,6 +240,13 @@ const BlogsWrapper = styled.div`
   align-items: center;
   padding: 4vh 0vw;
   grid-gap: 28px;
+  @media (max-width: 1000px) {
+    grid-template-columns: 450px;
+  }
+  @media (max-width:500px) {
+    grid-template-columns: 300px;
+  }
+ 
   & ${Card} {
     max-width: 450px;
     background: white;
@@ -95,14 +254,20 @@ const BlogsWrapper = styled.div`
     height: 320px;
     cursor: pointer;
     padding: 20px;
+    border-radius: 5px;
     text-decoration: none;
     color: black;
     border: 2px solid #ccc;
     & * {
       word-break: break-word;
     }
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.08);
+    }
   }
 `
+
 
 const ViewAll = styled(Link)`
   padding: 20px;
@@ -112,25 +277,31 @@ const ViewAll = styled(Link)`
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
   transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+  
   &:hover {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.08);
-    background: rebeccapurple;
+    background: rgb(102,51,153);
+    background: linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
     color: white;
     transform: translateY(-3px);
   }
 `
+
+
 const Footer = styled.div`
   display: flex;
   flex-direction: column;
-  background: rebeccapurple;
+  background: rgb(102,51,153);
+  background: linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
   color: white;
   font-family: 'Roboto', sans-serif;
 `
 
 const Subscribe = styled.div`
   padding: 60px 0;
+  margin: auto 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   & h3 {
     margin: 10px;
@@ -141,12 +312,12 @@ const Subscribe = styled.div`
   }
 
   & input {
-    height: 54px;
-    font-size: 22px;
+    height: 44px;
+    font-size: 18px;
     padding: 0px;
     padding-left: 10px;
     color: rebeccapurple;
-    width: 400px;
+    width: 240px;
     margin-right: 10px;
     border: none;
     border-radius: 2px;
@@ -161,11 +332,12 @@ const Subscribe = styled.div`
     }
   }
 
+
   & button {
-    font-size: 22px;
-    height: 54px;
+    font-size: 18px;
+    height: 44px;
     cursor: pointer;
-    padding: 0 20px;
+    padding: 0 10px;
     border: none;
     background: white;
     outline: none;
@@ -179,6 +351,29 @@ const Subscribe = styled.div`
         0 6px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-3px);
     }
+  }
+
+  @media (max-width: 1024px) {
+    & ${Subscribe} {
+        flex-direction:column;
+    }
+  
+    & input {
+      width: 200px;
+    }
+
+    & button {
+      padding: 0px 5px;
+    }
+    & h3 {
+      margin: 10px;
+    }
+    & h4 {
+      text-align:center;
+      margin: 10px;
+      font-weight: normal;
+    }
+  
   }
 `
 const Terms = styled.div`
@@ -197,9 +392,35 @@ const TermsLink = styled(Link)`
   }
 `
 
+
+
+
 const IndexPage = ({ data }) => (
   <>
     <SEO title="Home" keywords={['gatsby', 'application', 'react', 'blogs']} />
+    <CheckBoxMenu type="checkbox" id="showmenu" style={{display:"none"}} className="showmenu"/>
+     <Label for="showmenu" className="menulabel">
+      <MenuIcon className="hamburger"> 
+          <MenuLine/>
+          <MenuLine/>
+          <MenuLine/>
+      </MenuIcon> 
+      </Label>  
+     <MobileNavbar className="mobilenavbar">
+          {[
+            { name: 'blogs', link: 'blogs' },
+            { name: 'projects', link: 'projects' },
+            { name: 'contact us', link: 'contactus' },
+            { name: 'about us', link: 'aboutus' },
+            { name: 'jobs', link: 'jobs' },
+            { name: 'work with us', link: '/' },
+          ].map(item => (
+            <MobileNavLink key={item.name} to={`/${item.link}/`}>
+              {item.name.toUpperCase()}
+            </MobileNavLink>
+          ))}
+    </MobileNavbar>
+ 
     <Container>
       <div
         style={{
@@ -225,6 +446,9 @@ const IndexPage = ({ data }) => (
           {[
             { name: 'blogs', link: 'blogs' },
             { name: 'projects', link: 'projects' },
+            { name: 'contact us', link: 'contactus' },
+            { name: 'about us', link: 'aboutus' },
+            { name: 'jobs', link: 'jobs' },
             { name: 'work with us', link: '/' },
           ].map(item => (
             <NavLink key={item.name} to={`/${item.link}/`}>
@@ -233,15 +457,21 @@ const IndexPage = ({ data }) => (
           ))}
         </NavBar>
       </div>
-      <div style={{ padding: '15vh 0 0 0' }}>
-        <h1>Hi people</h1>
-        <p>Welcome to Eulercoder.</p>
-        <p>Now go build something great.</p>
+     <LandingSection>
+      <div style={{ padding: '13vh 0 0 0' }}>
+        <h1 style={{fontSize:"56px"}}>Hi People</h1>
+        <p style={{fontSize:18}}>Welcome to Eulercoder.</p>
+        <p style={{fontSize:18}}>Now build something great.</p>
       </div>
+      <LandingImage>
+      <PBoy />
+      </LandingImage>
+     </LandingSection>
     </Container>
+   
     <Information>
       {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }) => (
-        <Card>
+        <Card className="cards">
           <InfoContainer>
             <div>First Card</div>
             <h2>Card Info</h2>
@@ -268,7 +498,7 @@ const IndexPage = ({ data }) => (
               fields: { slug },
             },
           }) => (
-            <Card as={Link} to={slug}>
+            <Card  as={Link} to={slug}>
               <Title>{title}</Title>
               <Body>{excerpt}</Body>
               <Date>
@@ -303,13 +533,13 @@ const IndexPage = ({ data }) => (
           <h3>Subscribe for all the latest posts</h3>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <input type="text" placeholder="your@email.com" />
+          <input type="text" id="subscription-email" placeholder="your@email.com" />
           <button>Subscribe</button>
         </div>
       </Subscribe>
       <Terms>
         <TermsLink>Terms & Conditions</TermsLink>
-        <TermsLink>Private Policy</TermsLink>
+        <TermsLink>Privacy Policy</TermsLink>
       </Terms>
     </Footer>
   </>

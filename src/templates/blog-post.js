@@ -102,10 +102,100 @@ const Right = styled(StyledNext)`
   }
 `
 
+const Footer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: rgb(102,51,153);
+  background: linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+`
+
+const Subscribe = styled.div`
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  & h3 {
+    margin: 10px;
+  }
+  & h4 {
+    margin: 10px;
+    font-weight: normal;
+  }
+
+  & input {
+    height: 44px;
+    font-size: 18px;
+    padding: 0px;
+    padding-left: 10px;
+    color: rebeccapurple;
+    width: 240px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+    outline: none;
+    &:hover,
+    &:focus {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08),
+        0 6px 12px rgba(0, 0, 0, 0.08);
+      transform: translateY(-3px);
+    }
+  }
+
+
+  & button {
+    font-size: 18px;
+    height: 44px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: none;
+    background: white;
+    outline: none;
+    box-sizing: border-box;
+    color: rebeccapurple;
+    transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-radius: 2px;
+    &:hover,
+    &:focus {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08),
+        0 6px 12px rgba(0, 0, 0, 0.08);
+      transform: translateY(-3px);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & ${Subscribe} {
+        flex-direction:column;
+    }
+  
+    & input {
+      width: 200px;
+    }
+
+    & button {
+      padding: 0px 5px;
+    }
+    & h3 {
+      margin: 10px;
+    }
+    & h4 {
+      text-align:center;
+      margin: 10px;
+      font-weight: normal;
+    }
+  
+  }
+`
+
+
 const Blogs = ({ data, pageContext: { prev, next } }) => {
   const post = data.markdownRemark
   const { author, date, title } = post.frontmatter
   return (
+    <>
     <Layout
       style={{
         display: 'flex',
@@ -142,6 +232,19 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
         </Navigation>
       </Container>
     </Layout>
+    <Footer>
+      <Subscribe>
+        <div>
+          <h4>{'Eulercoder Newsletter'.toUpperCase()}</h4>
+          <h3>Subscribe for all the latest posts</h3>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <input type="text" id="subscription-email" placeholder="your@email.com" />
+          <button>Subscribe</button>
+        </div>
+      </Subscribe>
+    </Footer>
+    </>
   )
 }
 

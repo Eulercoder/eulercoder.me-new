@@ -32,6 +32,13 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `jobs`,
+        path: `${__dirname}/jobs/`,
+      },
+    },
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
