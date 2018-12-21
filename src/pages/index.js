@@ -504,7 +504,7 @@ const IndexPage = ({ data }) => (
               <Date>
                 <Author>
                   <Link
-                    to={authorLink}
+                    to={''}
                     style={{ textDecoration: 'none', color: '#000' }}
                   >
                     {author}
