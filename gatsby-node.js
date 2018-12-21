@@ -49,7 +49,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
   {
-    allBlogs: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/_posts/"}}, sort: {fields: [frontmatter___date], order: DESC}) {
+    allBlogs: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/_posts/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
@@ -110,6 +113,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   }
   
+  
   `)
 
   result.data.allBlogs.edges.forEach(({ node }, index) => {
@@ -152,23 +156,21 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  result.data.allJobs.edges.forEach(({node}, index) => {
+  result.data.allJobs.edges.forEach(({node}) => {
     // To Get the next and previous job.
-    let next =
-      index === 0 ? null : result.data.allJobs.edges[index - 1].node
-
-    const prev =
-      index === result.data.allProjects.edges.length - 1
-        ? null
-        : result.data.allJobs.edges[index + 1].node
+  //  let next =
+  //    index === 0 ? null : result.data.allJobs.edges[index - 1].node
+//
+  //  const prev =
+  //    index === result.data.allProjects.edges.length - 1
+  //      ? null
+  //      : result.data.allJobs.edges[index + 1].node
 
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/job-page.js`),
           context: {
             slug: node.fields.slug,
-            next,
-            prev,
           },
         })   
 
