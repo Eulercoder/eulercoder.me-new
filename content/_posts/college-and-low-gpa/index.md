@@ -1,5 +1,5 @@
 ---
-title: 'College and low GPA: Everything you need to know.'
+title: 'College and low GPA- Everything you need to know.'
 date: 2017-08-11 12:25:29 Z
 categories:
   - discussion

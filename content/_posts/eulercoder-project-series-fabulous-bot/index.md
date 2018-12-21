@@ -1,5 +1,5 @@
 ---
-title: Eulercoder Project Series —Fabulous Bot First Project Announcement
+title: Eulercoder Project Series Fabulous Bot First Project Announcement
 date: 2017-09-17 09:22:21 Z
 categories:
   - weekly-project

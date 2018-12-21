@@ -1,5 +1,5 @@
 ---
-title: '2 Years of Self-Learning Into a Developer: Eulercoder Motivation'
+title: '2 Years of Self-Learning Into a Developer- Eulercoder Motivation'
 date: 2017-08-06 13:50:37 Z
 tags:
   - learning

@@ -1,5 +1,5 @@
 ---
-title: 'Slack, Amazon, Mozilla, Browserstack: My Internship Interview Experience'
+title: 'Slack, Amazon, Mozilla, Browserstack- My Internship Interview Experience'
 date: 2017-07-25 15:14:37 Z
 categories:
   - internship

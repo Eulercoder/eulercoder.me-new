@@ -1,5 +1,5 @@
 ---
-title: 'Twitter Internship and Undergrad Role 2018: Everything you need to know'
+title: 'Twitter Internship and Undergrad Role 2018- Everything you need to know'
 date: 2017-08-02 19:18:51 Z
 categories:
   - internship

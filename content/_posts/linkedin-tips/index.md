@@ -1,5 +1,5 @@
 ---
-title: 'LinkedIn tips that actually work: Set up your News Feed on LinkedIn'
+title: 'LinkedIn tips that actually work- Set up your News Feed on LinkedIn'
 date: 2017-08-30 15:10:34 Z
 categories:
   - learning

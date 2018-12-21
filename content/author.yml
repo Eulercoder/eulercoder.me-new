@@ -1,6 +1,12 @@
-- id: vicky
-  bio: a great developer and entrepreur
+- id: vicky002
+  bio: a great developer and entrepreneur
   avatar: avatar/profile.png
 - id: vicky
-  bio: a great developer and entrepreur
+  bio: a great developer and entrepreneur
+  avatar: avatar/avatar.png
+- id: Kevin
+  bio: a great developer
+  avatar: avatar/avatar.png
+- id: Nicholas
+  bio: a great developer
   avatar: avatar/avatar.png

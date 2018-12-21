@@ -1,5 +1,5 @@
 ---
-title: 'Competitive Programming and Open Source: Which one to choose'
+title: 'Competitive Programming and Open Source- Which one to choose'
 date: 2017-07-23 07:39:55 Z
 categories:
   - discussion

@@ -1,5 +1,5 @@
 ---
-title: 'Three Internships mandatory for Engineering Students: Analysis and Discussion'
+title: 'Three Internships mandatory for Engineering Students- Analysis and Discussion'
 date: 2017-07-27 16:27:45 Z
 categories:
   - discussion

@@ -1,5 +1,5 @@
 ---
-title: Slack Internship Experience, San Francisco and Silicon Valley
+title: Slack Internship Experience- San Francisco and Silicon Valley
 date: 2017-07-22 02:17:22 Z
 categories:
   - internship

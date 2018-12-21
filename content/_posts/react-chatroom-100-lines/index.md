@@ -1,5 +1,5 @@
 ---
-title: Let's Build a React Chatroom Component in 100 Lines of Code
+title: Let us Build a React Chatroom Component in 100 Lines of Code
 date: 2017-08-28 03:10:37 Z
 tags:
   - react

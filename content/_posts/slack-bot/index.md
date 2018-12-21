@@ -1,5 +1,5 @@
 ---
-title: 'Slack Bot using Wolframalpha API : Basic Guide'
+title: 'Slack Bot using Wolframalpha API - Basic Guide'
 date: 2017-07-23 06:19:54 Z
 categories:
   - learning
