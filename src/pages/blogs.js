@@ -5,8 +5,8 @@ import SEO from '../components/seo'
 import Blog from '../components/blog'
 import { graphql } from 'gatsby'
 
-const Blogs = ({ data }) => {
-  const categoryType = queryString.parse(window.location.search).category;
+const Blogs = ({ data ,location }) => {
+  const categoryType = queryString.parse(location.search).category;
   if(categoryType){
     return (
       <Layout background="#fbfafc">
