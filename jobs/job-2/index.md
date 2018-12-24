@@ -6,7 +6,7 @@ company: 'Eulercoder'
 companyURL: 'https://reactjs.org/'
 location: 'Remote'
 category: 'Software'
-techstack: 'node, python, mongodb, js, cloud'
+techstack: 'node, python, mongodb, javascript, cloud'
 date: '2018-08-10'
 ---
 

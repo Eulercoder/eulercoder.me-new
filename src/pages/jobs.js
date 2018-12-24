@@ -116,35 +116,38 @@ const SearchInput = styled.input`
     }
 `
 
+const TechNotFound = styled.p`
+   
+`
+
 export default class JobsPage extends Component {  
    
     state = {
         inputTechType:"",
         techType:"",
+     
     }
 
+    techFound = false;
     hanldeChange = (e)=>{
-        if(this.state.inputTechType.trim().length < 3) {
-            this.setState({
-                techType:"",
-            });
-        }
+        this.techFound = false;
         this.setState({
             inputTechType : e.target.value,
+        },()=>{
+            if(this.state.inputTechType === "")
+            this.setState({techType:""});
         })
-        this.setState({
-            techType : this.state.inputTechType.toLowerCase().trim(),
-        });
     }
 
     handleSubmit = (e)=> {
-     
+        if(e)
         e.preventDefault();
         this.setState({
             techType : this.state.inputTechType.toLowerCase().trim(),
         });
-        console.log(this.state.techType);
+        
     }
+   
    
     render () {
 
@@ -178,8 +181,10 @@ export default class JobsPage extends Component {
               },
         }, i
     )=> { 
-        if(techstack.split(/\s*,\s*/,5).toString().includes(this.state.techType)) {
-        console.log("search "+techstack.split(",",5).toString() );
+        
+        let tech = techstack ? techstack.split(/\s*,\s*/,5).map(t=>{ if ((new RegExp(`^${this.state.techType}$`,"g")).test(t.trim().toLowerCase())) return true; else return false; }) : false ;
+        if( tech && tech.reduce((a,c)=> { return a || c}) ) {  
+        this.techFound = true;    
         return(
         <Job key={jobURL + companyURL + i}>
             <JobWrap className="jobs-wrap" to={slug}>
@@ -196,16 +201,25 @@ export default class JobsPage extends Component {
             <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
             <Techstacks style={{width:320}}>
             {techstack.split(",").slice(0,5).map((tech, i)=>
-               <p key={tech + i} onClick={(e)=>{console.log("techstack"+ tech); e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()}); this.searchtechbutton.click();  }} >{tech}</p>
+               <p key={tech + i} onClick={(e)=>{e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()},()=>{this.searchtechbutton.click();});}} >{tech}</p>
             )
             }
             </Techstacks>
             <span>Date Posted: <em>{date}</em></span>
             </JobWrap>
         </Job>);}
-        else return <React.Fragment></React.Fragment>;    
+        else { 
+            
+            this.techFound = this.techFound || tech.reduce((a,c)=> { return a || c} );
+            return <></>
+        };    
     }
     )}
+
+    {
+     this.state.techType && !this.techFound && <TechNotFound> 🙈 not found... </TechNotFound>
+    }
+   
 
     {
         !this.state.techType && data.allMarkdownRemark.edges.map((
@@ -234,7 +248,7 @@ export default class JobsPage extends Component {
                 <StyledImg fixed={logo.childImageSharp.fixed} />
                 <JobSection>
                 <span ><h4>{job}</h4></span>
-                <span  >
+                <span >
                 {company}
                 </span>
                 </JobSection>
@@ -243,7 +257,7 @@ export default class JobsPage extends Component {
                 <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
                 <Techstacks style={{width:320}}>
                 {techstack.split(",").slice(0,5).map((tech, i)=>
-                   <p key={tech + i} onClick={(e)=>{console.log("techstack"+ tech); e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()}); this.searchtechbutton.click();  }} >{tech}</p>     
+                   <p key={tech + i} onClick={(e)=>{ e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()},()=>{this.searchtechbutton.click();});   }} >{tech}</p>     
                 )
                 }
                 </Techstacks>
