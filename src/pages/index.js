@@ -354,9 +354,9 @@ const Subscribe = styled.div`
   }
 
   @media (max-width: 1024px) {
-    & ${Subscribe} {
+
         flex-direction:column;
-    }
+    
   
     & input {
       width: 200px;
@@ -414,8 +414,8 @@ const IndexPage = ({ data }) => (
             { name: 'about us', link: 'aboutus' },
             { name: 'jobs', link: 'jobs' },
             { name: 'work with us', link: '/' },
-          ].map(item => (
-            <MobileNavLink key={item.name} to={`/${item.link}/`}>
+          ].map((item,i) => (
+            <MobileNavLink key={item.name + i } to={`/${item.link}/`}>
               {item.name.toUpperCase()}
             </MobileNavLink>
           ))}
@@ -470,8 +470,8 @@ const IndexPage = ({ data }) => (
     </Container>
    
     <Information>
-      {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }) => (
-        <Card className="cards">
+      {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }, i) => (
+        <Card key={"cards" + i} className="cards">
           <InfoContainer>
             <div>First Card</div>
             <h2>Card Info</h2>
@@ -498,7 +498,7 @@ const IndexPage = ({ data }) => (
               fields: { slug },
             },
           }) => (
-            <Card  as={Link} to={slug}>
+            <Card key={"blogswrap"+title} as={Link} to={slug}>
               <Title>{title}</Title>
               <Body>{excerpt}</Body>
               <Date>

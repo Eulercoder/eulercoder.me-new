@@ -54,12 +54,7 @@ const JobSection = styled.div`
     width: 280px;
     margin-left: 20px;
 
-    & a {
-        text-decoration: none;
-        color: black;
-
-       
-    }
+    
 `
 const JobSectionWithImage = styled.div`
     display: flex;
@@ -85,6 +80,11 @@ const Techstacks = styled.div`
         border: 1px solid grey;
         border-radius: 3px;
         text-align:center;
+        z-index: 100;
+        &:hover {
+            background: grey;
+            color: white;
+        }
     }
 `
 
@@ -132,25 +132,31 @@ export default class JobsPage extends Component {
         this.setState({
             inputTechType : e.target.value,
         })
+        this.setState({
+            techType : this.state.inputTechType.toLowerCase().trim(),
+        });
     }
 
     handleSubmit = (e)=> {
+     
         e.preventDefault();
         this.setState({
             techType : this.state.inputTechType.toLowerCase().trim(),
         });
         console.log(this.state.techType);
     }
-    
+   
     render () {
 
     const {data} = this.props; 
     return(
     <Layout style={{ maxWidth: 1300, width: '90%' }}>
     <SEO title="JOBS" />
-    <Form onSubmit={(e)=>this.handleSubmit(e)}>
+    <Form onSubmit={(e)=>this.handleSubmit(e)}
+    
+    >
     <SearchInput  type="text" placeholder="&#x1F50D; Search tech here..." value={this.state.inputTechType} onChange={(e)=>this.hanldeChange(e)}/>
-    <SearchButton type="submit" value="Search"/>
+    <SearchButton type="submit" ref={(button)=>{this.searchtechbutton = button}} value="Search"/>
     </Form>
     <Jobs style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
     
@@ -175,29 +181,29 @@ export default class JobsPage extends Component {
         if(techstack.split(/\s*,\s*/,5).toString().includes(this.state.techType)) {
         console.log("search "+techstack.split(",",5).toString() );
         return(
-        <Job key={jobURL + companyURL + `${i}`}>
+        <Job key={jobURL + companyURL + i}>
             <JobWrap className="jobs-wrap" to={slug}>
             <JobSectionWithImage>
             <StyledImg fixed={logo.childImageSharp.fixed} />
             <JobSection>
-            <a  target="_blank" rel="noopener noreferrer" ><h4>{job}</h4></a>
-            <a  target="_blank" rel="noopener noreferrer">
+            <span><h4>{job}</h4></span>
+            <span >
             {company}
-            </a>
+            </span>
             </JobSection>
             </JobSectionWithImage>
             <p className="location" style={{width:200}}>Location: <b>{location}</b></p>
             <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
             <Techstacks style={{width:320}}>
             {techstack.split(",").slice(0,5).map((tech, i)=>
-               <p>{tech}</p>     
+               <p key={tech + i} onClick={(e)=>{console.log("techstack"+ tech); e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()}); this.searchtechbutton.click();  }} >{tech}</p>
             )
             }
             </Techstacks>
             <span>Date Posted: <em>{date}</em></span>
             </JobWrap>
         </Job>);}
-        else return;    
+        else return <React.Fragment></React.Fragment>;    
     }
     )}
 
@@ -222,28 +228,29 @@ export default class JobsPage extends Component {
         )=> { 
            if(!this.inputTechType)
             return(
-            <Job key={jobURL + companyURL + "all" + `${i}`}>
+            <Job key={jobURL + companyURL + "all" + i}>
                 <JobWrap className="jobs-wrap" to={slug}>
                 <JobSectionWithImage>
                 <StyledImg fixed={logo.childImageSharp.fixed} />
                 <JobSection>
-                <a  target="_blank" rel="noopener noreferrer" ><h4>{job}</h4></a>
-                <a  target="_blank" rel="noopener noreferrer">
+                <span ><h4>{job}</h4></span>
+                <span  >
                 {company}
-                </a>
+                </span>
                 </JobSection>
                 </JobSectionWithImage>
                 <p className="location" style={{width:200}}>Location: <b>{location}</b></p>
                 <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
                 <Techstacks style={{width:320}}>
                 {techstack.split(",").slice(0,5).map((tech, i)=>
-                   <p>{tech}</p>     
+                   <p key={tech + i} onClick={(e)=>{console.log("techstack"+ tech); e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()}); this.searchtechbutton.click();  }} >{tech}</p>     
                 )
                 }
                 </Techstacks>
                 <span>Date Posted: <em>{date}</em></span>
                 </JobWrap>
             </Job>);
+            else return <React.Fragment></React.Fragment>
              
         }
         )

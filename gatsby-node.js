@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `slug`,
-        value: '/blogs' + slug,
+        value: "/" + node.frontmatter.date.split("-")[0].toString() + "/" + node.frontmatter.date.split("-")[1].toString() + "/" + slug.split("/")[2],
       })
     } else if (jobsre.test(node.fileAbsolutePath)) {
       const slug = createFilePath({ node, getNode, basePath: `jobs` })

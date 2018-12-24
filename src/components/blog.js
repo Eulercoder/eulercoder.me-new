@@ -54,7 +54,7 @@ export const Author = styled.span`
   }
 `
 
-const Blog = ({ title, date, excerpt, link, author }) => {
+const Blog = ({ title, date, excerpt, link, author, authorLink }) => {
   return (
     <Link to={link} style={{ textDecoration: 'none', color: 'black' }}>
       <Container>
@@ -62,7 +62,7 @@ const Blog = ({ title, date, excerpt, link, author }) => {
         <Body>{excerpt}</Body>
         <Date>
           <Author>
-            <Link to={''} style={{ textDecoration: 'none', color: '#000' }}>
+            <Link to={authorLink} style={{ textDecoration: 'none', color: '#000' }}>
               {author}
             </Link>
           </Author>{' '}

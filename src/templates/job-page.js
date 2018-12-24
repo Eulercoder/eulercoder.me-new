@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const JobWrap = styled.div`
@@ -104,7 +104,7 @@ const JobPage = ({data})=> {
     
     return(
     <Layout  style={{ maxWidth: 1200, width: '80%' }}>
-     <SEO title={job} /> 
+    <SEO title={job} /> 
     
     <Job>
     <JobWrap className="jobs-wrap" >
@@ -121,13 +121,13 @@ const JobPage = ({data})=> {
             <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
             <Techstacks style={{width:320}}>
             {techstack.split(",").slice(0,5).map((tech, i)=>
-               <p>{tech}</p>     
+               <p key={tech + i}>{tech}</p>     
             )
             }
             </Techstacks>
             <span>Date Posted: <em>{date}</em></span>
             </JobWrap>
-        </Job>
+    </Job>
         <Body dangerouslySetInnerHTML={{ __html : jobdata.html}}/>
    
     </Layout>

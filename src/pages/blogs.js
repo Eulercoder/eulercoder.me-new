@@ -5,7 +5,41 @@ import SEO from '../components/seo'
 import Blog from '../components/blog'
 import { graphql } from 'gatsby'
 
-const Blogs = ({ data }) => (
+const Blogs = ({ data }) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if(urlParams.get('category')){
+    return (
+      <Layout background="#fbfafc">
+      <SEO title="Blogs" />
+      <div
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      >
+        {data.allMarkdownRemark.edges.map(({ node }) => 
+          {
+            console.log("here it is"+ (node.frontmatter.categories ? node.frontmatter.categories.toString() : "hello"));
+            if(node.frontmatter.categories && node.frontmatter.categories.toString().includes(`${urlParams.get('category')}`))
+            { 
+          return(
+          <Blog
+            key={node.fields.slug}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+            link={node.fields.slug}
+            authorLink={node.frontmatter.author.fields.slug}
+            author={node.frontmatter.author.id}
+          />
+          );
+          } else return <div></div>;
+           
+        }
+        )}
+      </div>
+    </Layout>
+    );
+  } 
+  else
+  return(
   <Layout background="#fbfafc">
     <SEO title="Blogs" />
     <div
@@ -23,8 +57,8 @@ const Blogs = ({ data }) => (
         />
       ))}
     </div>
-  </Layout>
-)
+  </Layout>);
+}
 
 export const query = graphql`
   query {
@@ -37,6 +71,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            categories
             date(formatString: "DD MMMM, YYYY")
             author {
               fields {

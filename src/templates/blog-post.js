@@ -14,6 +14,34 @@ const Container = styled.div`
   max-width: 760px;
 `
 
+const Category = styled.div`
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.0075em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+`
+
+const Categories = styled(Link)`
+  color: #666;
+  text-decoration: none solid rgba(0,0,0,0.8);
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 4px 10px;
+  background: #F9F9F9;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 0px;
+  &:hover {
+    color: #663399;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+`
+
 const Title = styled.h2`
   margin-top: 1.6rem;
   margin-bottom: 1.05rem;
@@ -167,9 +195,9 @@ const Subscribe = styled.div`
   }
 
   @media (max-width: 1024px) {
-    & ${Subscribe} {
-        flex-direction:column;
-    }
+  
+    flex-direction:column;
+    
   
     & input {
       width: 200px;
@@ -193,7 +221,9 @@ const Subscribe = styled.div`
 
 const Blogs = ({ data, pageContext: { prev, next } }) => {
   const post = data.markdownRemark
-  const { author, date, title } = post.frontmatter
+  const { author, date, title, categories } = post.frontmatter
+  
+ 
   return (
     <>
     <Layout
@@ -208,6 +238,9 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
         <Date>
           <Author to={author.fields.slug}>{author.id}</Author> on {date}
         </Date>
+        <Category>
+        { categories && categories.map((category,i)=><Categories key={category + i} to={`/blogs?category=${category}`}>{category}</Categories>)}
+        </Category>
         <Title>{title}</Title>
         <Body dangerouslySetInnerHTML={{ __html: post.html }} />
         <Navigation>
@@ -254,6 +287,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        categories
         date(formatString: "DD MMMM, YYYY")
         author {
           fields {
