@@ -1,13 +1,13 @@
 import React from 'react'
-
+import queryString from 'query-string'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Blog from '../components/blog'
 import { graphql } from 'gatsby'
 
 const Blogs = ({ data }) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  if(urlParams.get('category')){
+  const categoryType = queryString.parse(window.location.search).category;
+  if(categoryType){
     return (
       <Layout background="#fbfafc">
       <SEO title="Blogs" />
@@ -16,9 +16,10 @@ const Blogs = ({ data }) => {
       >
         {data.allMarkdownRemark.edges.map(({ node }) => 
           {
-            console.log("here it is"+ (node.frontmatter.categories ? node.frontmatter.categories.toString() : "hello"));
-            if(node.frontmatter.categories && node.frontmatter.categories.toString().includes(`${urlParams.get('category')}`))
+            
+            if(node.frontmatter.categories && node.frontmatter.categories.toString().includes(`${categoryType}`))
             { 
+              
           return(
           <Blog
             key={node.fields.slug}

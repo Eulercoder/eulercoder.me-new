@@ -209,9 +209,8 @@ export default class JobsPage extends Component {
             </JobWrap>
         </Job>);}
         else { 
-            
             this.techFound = this.techFound || tech.reduce((a,c)=> { return a || c} );
-            return <></>
+            return <></>;
         };    
     }
     )}
