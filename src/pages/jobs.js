@@ -45,6 +45,14 @@ const Job = styled.div`
     &:hover {
         background: #F9F9F9;
     }
+    & .location {
+        margin-left: 20px;
+    }
+    @media (max-width: 384px) {
+    & .location {
+        margin-left: 100px;
+    }
+    }
 ` 
 const JobSection = styled.div`
     display: flex;
@@ -53,7 +61,9 @@ const JobSection = styled.div`
     align-items: flex-start;
     width: 280px;
     margin-left: 20px;
-
+    @media (max-width: 384px) {
+        width: 200px;
+    }
     
 `
 const JobSectionWithImage = styled.div`
@@ -80,9 +90,9 @@ const Techstacks = styled.div`
         border: 1px solid grey;
         border-radius: 3px;
         text-align:center;
-        z-index: 100;
+        z-index: 3;
         &:hover {
-            background: grey;
+            background:linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
             color: white;
         }
     }
@@ -153,7 +163,7 @@ export default class JobsPage extends Component {
 
     const {data} = this.props; 
     return(
-    <Layout style={{ maxWidth: 1300, width: '90%' }}>
+    <Layout style={{ maxWidth: 1300, width: '100%' }}>
     <SEO title="JOBS" />
     <Form onSubmit={(e)=>this.handleSubmit(e)}
     
@@ -216,7 +226,7 @@ export default class JobsPage extends Component {
     )}
 
     {
-     this.state.techType && !this.techFound && <TechNotFound> 🙈 not found... </TechNotFound>
+     this.state.techType && !this.techFound && <TechNotFound> <span role="img" aria-label="tech " >🙈</span> not found... </TechNotFound>
     }
    
 

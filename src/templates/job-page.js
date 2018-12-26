@@ -80,6 +80,19 @@ const Techstacks = styled.div`
         text-align:center;
     }
 `
+const ApplyJob = styled.a`
+    text-decoration: none;
+    color: white;
+    background:  rgb(102,51,153); 
+    padding: 8px 50px;
+    font-size: 1rem;
+    margin: 10px 0px;
+    transition: all 0.1s ease;
+    border-radius: 4px;
+    &:hover {
+        background: rgb(81,24,138) ;
+    }
+`
 const Body = styled.div`
 font-size: 0.94rem;
 font-family: 'Roboto', sans-serif;
@@ -126,6 +139,7 @@ const JobPage = ({data})=> {
             }
             </Techstacks>
             <span>Date Posted: <em>{date}</em></span>
+            <ApplyJob href={jobURL} target="_blank" rel="noopener noreferrer">Apply</ApplyJob>
             </JobWrap>
     </Job>
         <Body dangerouslySetInnerHTML={{ __html : jobdata.html}}/>

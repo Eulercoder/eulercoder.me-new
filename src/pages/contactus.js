@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { Link } from 'gatsby'
 import { ReactComponent as GitHub } from '../icons/github.svg'
 import { ReactComponent as Linkedin } from '../icons/linkedin.svg'
 import { ReactComponent as Twitter } from '../icons/twitter.svg'
@@ -81,18 +80,18 @@ const ContactUs = ()=> {
     <SEO title="Contact Us" />
     <Top>
     <Socialize>  
-    <Link to="https://github.com/Eulercoder">  
+    <a href="https://github.com/Eulercoder" target="_blank" rel="noopener noreferrer">  
     <GitHub   height={50} />
-    </Link>
-    <Link to="https://twitter.com/eulercoder">
+    </a>
+    <a href="https://twitter.com/eulercoder" target="_blank" rel="noopener noreferrer">
     <Twitter  height={50} /> 
-    </Link>
-    <Link to="https://www.linkedin.com/company/eulercoder?trk=company_home_typeahead_result">  
+    </a>
+    <a href="https://www.linkedin.com/company/eulercoder?trk=company_home_typeahead_result" target="_blank" rel="noopener noreferrer">  
     <Linkedin height={50} />
-    </Link>
-    <Link to="https://facebook.com/eulercoder">
+    </a>
+    <a href="https://facebook.com/eulercoder" target="_blank" rel="noopener noreferrer">
     <Facebook height={50} />
-    </Link>
+    </a>
     </Socialize>
     <h1>Hello.</h1>
     <p>We are all ears!</p>
