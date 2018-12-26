@@ -11,7 +11,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/san-francisco.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/
+link: https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/
 wordpress_id: 115
 ---
 
@@ -33,7 +33,7 @@ _**Why role is extremely important:**_
 
 You will see many 'Software Engineer Internship' posts on career websites and they don't mention what you are going to do there. So, it's better to tell them in your first round or apply to specific internship roles. Hopefully, you won't struggle in your internship fixing a div element being a Backend developer.
 
-**Check: **Internship and Software Engineering Job: The Ultimate Guide [x_button shape="square" size="small" float="none" href="http://eulercoder.me/blog/internship-software-job-ultimate-guide/" title="Internship and Software Job: The Ultimate Guide" target="blank" info="none" info_place="top" info_trigger="hover"]Full Course[/x_button]
+**Check: **Internship and Software Engineering Job: The Ultimate Guide [x_button shape="square" size="small" float="none" href="https://eulercoder.me/blog/internship-software-job-ultimate-guide/" title="Internship and Software Job: The Ultimate Guide" target="blank" info="none" info_place="top" info_trigger="hover"]Full Course[/x_button]
 
 ---
 
@@ -51,4 +51,4 @@ If you are going there for a summer internship, there are many groups on Faceboo
 
 That's all!
 
-You can check All San Francisco Photos on [Instagram : @_banjara_](http://instagram.com/_banjara_)
+You can check All San Francisco Photos on [Instagram : @_banjara_](https://instagram.com/_banjara_)

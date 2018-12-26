@@ -13,15 +13,15 @@ navigation: true
 cover: assets/images/cover/new_project.jpg
 class: post-template
 subclass: post
-link: http://eulercoder.me/2017/09/eulercoder-project-series-fabulous-bot/
+link: https://eulercoder.me/2017/09/eulercoder-project-series-fabulous-bot/
 wordpress_id: 945
 ---
 
 Hello!
 
-In our previous post, Eulercoder [announced our weekly project series](http://eulercoder.me/weekly-project/) based on the feedback and suggestions from our readers. We had mentioned that we will be announcing our first project on Saturday — 16th September (2017) but there was a slight delay and today is a Sunday.
+In our previous post, Eulercoder [announced our weekly project series](https://eulercoder.me/weekly-project/) based on the feedback and suggestions from our readers. We had mentioned that we will be announcing our first project on Saturday — 16th September (2017) but there was a slight delay and today is a Sunday.
 
-Today [Eulercoder](http://eulercoder.me/about) is announcing the very first project in the[ weekly projects series](http://eulercoder.me/weekly-project/), The Fabulous bot for Slack. (Will be available for Messenger, Telegram too)
+Today [Eulercoder](https://eulercoder.me/about) is announcing the very first project in the[ weekly projects series](https://eulercoder.me/weekly-project/), The Fabulous bot for Slack. (Will be available for Messenger, Telegram too)
 
 ### Fabulous Bot for Slack
 
@@ -90,7 +90,7 @@ Most of the top companies and startups are already using Slack and on an average
 
 - Shell Scripting
 
-- [Makefiles](http://mrbook.org/blog/tutorials/make/)
+- [Makefiles](https://mrbook.org/blog/tutorials/make/)
 
 - Git — For source code management and collaboration
 
@@ -108,7 +108,7 @@ Most of the top companies and startups are already using Slack and on an average
 
 ### How does the source code folder structure look like?
 
-Folder structure will look something like this. This is not permanent but we will try to stick to this structure. If you have any suggestions related to this, feel free to post it in [our Slack channel](http://bit.ly/EulercoderOnSlack) or [make an issue on GitHub](https://github.com/Eulercoder/fabulous/issues/new).
+Folder structure will look something like this. This is not permanent but we will try to stick to this structure. If you have any suggestions related to this, feel free to post it in [our Slack channel](https://bit.ly/EulercoderOnSlack) or [make an issue on GitHub](https://github.com/Eulercoder/fabulous/issues/new).
 
     <code class="language-markup">.
     ├── fabulous
@@ -154,7 +154,7 @@ Folder structure will look something like this. This is not permanent but we wil
 
 ### Get Started!
 
-- The very first thing you have to do is — [Join Eulercoder Community on Slack!](http://eulercoder.me/about/community/)
+- The very first thing you have to do is — [Join Eulercoder Community on Slack!](https://eulercoder.me/about/community/)
 
 - Head over to “fabulousbot” channel and write a short intro, tell us what technologies you know and what you want to learn.
 
@@ -174,12 +174,12 @@ Looking forward to work, collaborate and learn together.
 
 ---
 
-_We started _[_Eulercoder_](http://eulercoder.me/)_ with a mission to be the best computer science portal on the web. We need to do a lot of work, it will require extremely hard work, the content and the courses need to be the best. We extremely value our readers and take each feedback very seriously. With this, today we are launching our Eulercoder weekly project series, I request you to join us. Let’s improve ourselves as a developer and also _[_contribute — help everyone_](http://eulercoder.me/contribute/)_ in becoming better at programming._
+_We started _[_Eulercoder_](https://eulercoder.me/)_ with a mission to be the best computer science portal on the web. We need to do a lot of work, it will require extremely hard work, the content and the courses need to be the best. We extremely value our readers and take each feedback very seriously. With this, today we are launching our Eulercoder weekly project series, I request you to join us. Let’s improve ourselves as a developer and also _[_contribute — help everyone_](https://eulercoder.me/contribute/)_ in becoming better at programming._
 
-[**Subscribe to our Weekly Updates**](http://eepurl.com/bRklFn)**| **[**Join Eulercoder Community on Slack!**](https://publicslack.com/slacks/eulercodercommunity/invites/new)
+[**Subscribe to our Weekly Updates**](https://eepurl.com/bRklFn)**| **[**Join Eulercoder Community on Slack!**](https://publicslack.com/slacks/eulercodercommunity/invites/new)
 
 Thank you!
 
 ---
 
-**Have something to talk about? Want to contribute to our **[**Mission and Goal**](http://eulercoder.me/about)**? Write on Eulercoder. Write an **[**email to us**](mailto:hi@eulercoder.me)** or **[**contact us**](http://eulercoder.me/contact)** for guest posts.**
+**Have something to talk about? Want to contribute to our **[**Mission and Goal**](https://eulercoder.me/about)**? Write on Eulercoder. Write an **[**email to us**](mailto:hi@eulercoder.me)** or **[**contact us**](https://eulercoder.me/contact)** for guest posts.**

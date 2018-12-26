@@ -11,7 +11,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/build_dev.jpg
 subclass: post
-link: http://eulercoder.me/2017/08/react-chatroom-100-lines/
+link: https://eulercoder.me/2017/08/react-chatroom-100-lines/
 wordpress_id: 823
 ---
 
@@ -106,7 +106,7 @@ You can try to edit anything here and you will notice the website at localhost:3
 
 ### Build the Chatroom
 
-SO — Let’s get straight to the point. Let’s modify the render function of this App to only render a background div where we apply an easy Flexbox layout to pin the Chatroom in the center of the page (You can simply copy my CSS code from [here](http://react-chatapp.surge.sh/static/css/main.b5d0bdf9.css), as I won’t be covering CSS in this post), and of course, the Chatroom component itself.
+SO — Let’s get straight to the point. Let’s modify the render function of this App to only render a background div where we apply an easy Flexbox layout to pin the Chatroom in the center of the page (You can simply copy my CSS code from [here](https://react-chatapp.surge.sh/static/css/main.b5d0bdf9.css), as I won’t be covering CSS in this post), and of course, the Chatroom component itself.
 
     <code class="language-javascript">return (
     <div className=“App”>
@@ -193,7 +193,7 @@ Go to the root directory of this project in your terminal.
     cd build
     surge</code>
 
-There you go. Literally, three commands in Terminal and your first React site will be running healthy and at no cost at a [Surge.sh](http://Surge.sh) sub-domain just like my [react-chatapp.surge.sh](https://react-chatapp.surge.sh) with free and built-in SSL/HTTPS.
+There you go. Literally, three commands in Terminal and your first React site will be running healthy and at no cost at a [Surge.sh](https://Surge.sh) sub-domain just like my [react-chatapp.surge.sh](https://react-chatapp.surge.sh) with free and built-in SSL/HTTPS.
 
 ### Whoa! My First Attempt
 
@@ -207,7 +207,7 @@ But yeah, this is how I made this React Chatroom Component in 100 lines explaine
 
 **Highly Recommended articles: **
 
-If you are looking for Summer Internship or preparing for full-time job, I highly recommend you to read out [Summer Internship: The Ultimate Guide](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/). We have also written a beginner's guide on [Getting Started with Open Source Development](http://eulercoder.me/2017/07/getting-started-open-source/). Do read them!
+If you are looking for Summer Internship or preparing for full-time job, I highly recommend you to read out [Summer Internship: The Ultimate Guide](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/). We have also written a beginner's guide on [Getting Started with Open Source Development](https://eulercoder.me/2017/07/getting-started-open-source/). Do read them!
 
 ---
 
@@ -215,7 +215,7 @@ Anyways, if you are interested in talking to me, perhaps there is something in t
 
 ---
 
-**Have something to talk about? Want to contribute in our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute in our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write your comments below. 🙂
 

@@ -15,7 +15,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/analysis.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/summer-internship-ultimate-guide/
+link: https://eulercoder.me/2017/07/summer-internship-ultimate-guide/
 wordpress_id: 440
 ---
 
@@ -427,7 +427,7 @@ Now you have a very good resume and you know all basics of CS. The time has come
 
 Yes! This is December 2016 and Internship process for Summer 2017 has just started. I have already created a sheet for you! Open [this sheet](https://docs.google.com/spreadsheets/d/1-0M50QEHjB64WhdcMFDlAbp4atND8QrlWJwKkfpNJ2k/edit?usp=sharing) and make a copy for yourself. Edit companies as per your preferences.
 
-Apply everywhere! Don't think that you don't have a perfect resume, just visit their career website or [LinkedIn internship posts](https://www.linkedin.com/vsearch/j?keywords=Internship&title=Internship&sb=Jobs%20for%20Internship%20titles&trk=tyah&trkInfo=clickedVertical%3Asuggestion%2CclickedEntityId%3A166%2Cidx%3A1-1-1%2CtarId%3A1457835727447%2Ctas%3Ainternship%20) and fill the form. I applied to [more than 20 companies this year](http://eulercoder.me/2016/02/27/My-internship-interview-experience-with-Amazon-LinkedIn-BrowserStack-Mozilla-and-Slack/).
+Apply everywhere! Don't think that you don't have a perfect resume, just visit their career website or [LinkedIn internship posts](https://www.linkedin.com/vsearch/j?keywords=Internship&title=Internship&sb=Jobs%20for%20Internship%20titles&trk=tyah&trkInfo=clickedVertical%3Asuggestion%2CclickedEntityId%3A166%2Cidx%3A1-1-1%2CtarId%3A1457835727447%2Ctas%3Ainternship%20) and fill the form. I applied to [more than 20 companies this year](https://eulercoder.me/2016/02/27/My-internship-interview-experience-with-Amazon-LinkedIn-BrowserStack-Mozilla-and-Slack/).
 
 Once you get shortlisted for the interviews search the everywhere about past internship interview process, questions on Glassdoor, Geeksforgeeks and reddit. When I got shortlisted for the internship at Slack, I searched everywhere about interview process and questions asked. I couldn't find any except a post on reddit. If you don't find anything and just goto [this sub](https://www.reddit.com/r/cscareerquestions/) and post questions or search for past interns on LinkedIn add them in your profile and message them directly. Three out of ten people will give you perfect reply and this is enough for you!
 
@@ -449,55 +449,55 @@ I have collected some interview experiences of top companies from different reso
 
 #### For startup internships
 
-- [AngelList](http://angel.co/)
+- [AngelList](https://angel.co/)
 
 - [Hello Intern](https://www.hellointern.com/)
 
-- [HeySuccess](http://heysuccess.com/)
+- [HeySuccess](https://heysuccess.com/)
 
-- [Hired](http://hired.com/)
+- [Hired](https://hired.com/)
 
-- [Internshala](http://internshala.com/)
+- [Internshala](https://internshala.com/)
 
 #### Algorithms and Data Structure
 
 - [Geeksforgeeks ](https://www.geeksforgeeks.org) (Website).
 
-- [The Algorithm Design Manual](http://sist.sysu.edu.cn/~isslxm/DSA/textbook/Skiena.-.TheAlgorithmDesignManual.pdf) (Book - PDF)
+- [The Algorithm Design Manual](https://sist.sysu.edu.cn/~isslxm/DSA/textbook/Skiena.-.TheAlgorithmDesignManual.pdf) (Book - PDF)
 
 - [LeetCode](https://leetcode.com) (For Practice)
 
 - [TopCoder](https://topcoder.com) (For Practice)
 
-- Elements of Programming Interviews (Book) [Amazon](http://amzn.to/2trD6pl)
+- Elements of Programming Interviews (Book) [Amazon](https://amzn.to/2trD6pl)
 
-- Coding Interview Questions by Narasimha Karumanchi [Amazon](http://amzn.to/2tMlYcX)
+- Coding Interview Questions by Narasimha Karumanchi [Amazon](https://amzn.to/2tMlYcX)
 
 #### Networking
 
 - [HTTP - The Definite Guide](https://drive.google.com/file/d/0BwKu-h8_pNchRWhMSWczU29jVTA/view?usp=sharing) (Book - PDF)
 
-- [Basics of Networking](http://www3.nd.edu/~cpoellab/teaching/cse40814_fall14/networks.pdf) (Website)
+- [Basics of Networking](https://www3.nd.edu/~cpoellab/teaching/cse40814_fall14/networks.pdf) (Website)
 
 - [Computer Networks](https://docs.google.com/file/d/0B3ABfanK6Vkya2dsVHdMQ0l5bkk/edit) (Book-PDF)
 
 #### Operating System
 
-- [Operating system concepts](http://infoman.teikav.edu.gr/~stpapad/OS_8th_Edition.pdf) (Book - PDF)
+- [Operating system concepts](https://infoman.teikav.edu.gr/~stpapad/OS_8th_Edition.pdf) (Book - PDF)
 
 #### Web Stuff
 
-[FreeCodeCamp](http://freecodecamp.com) [Best JavaScript tutorial](https://learn.javascript.ru/) (It's a Russian website use Chrome to translate) [W3Schools](http://www.w3schools.com/)
+[FreeCodeCamp](https://freecodecamp.com) [Best JavaScript tutorial](https://learn.javascript.ru/) (It's a Russian website use Chrome to translate) [W3Schools](https://www.w3schools.com/)
 
 #### Interview preparation
 
-[GeeksforGeeks - Interview](http://www.geeksforgeeks.org/about/interview-corner/) [IndiaBix](http://www.indiabix.com/) [CareerCup](http://www.careercup.com) [KateMats](http://katemats.com/hiring-interviews/)
+[GeeksforGeeks - Interview](https://www.geeksforgeeks.org/about/interview-corner/) [IndiaBix](https://www.indiabix.com/) [CareerCup](https://www.careercup.com) [KateMats](https://katemats.com/hiring-interviews/)
 
 #### Other
 
 - [Awesome](https://github.com/sindresorhus/awesome) (This contains everything you need!)
 
-Other highly recommended books. - [Cracking the Coding Interview](http://amzn.to/2trYdri) - [Programming Interview Exposed](http://amzn.to/2sPdmFd)
+Other highly recommended books. - [Cracking the Coding Interview](https://amzn.to/2trYdri) - [Programming Interview Exposed](https://amzn.to/2sPdmFd)
 
 Last thing:
 
@@ -515,8 +515,8 @@ Summer Internship Course, contains series of articles on Preparation strategy, H
 
 Email Address \*
 
-**Disclaimer:** _I am not a recruiter or a brilliant coder who works in your dream company. I am a student just like you and I have spent last two months searching for the internship blogs, articles and interview experiences. I applied to more than twenty companies for summer internship and [interviewed with some top companies](http://eulercoder.me/2016/02/27/My-internship-interview-experience-with-Amazon-LinkedIn-BrowserStack-Mozilla-and-Slack/) and I'd be interning at [Slack](https://www.slack.com) this summer. Read and follow things mentioned in this post at your own risk!_
+**Disclaimer:** _I am not a recruiter or a brilliant coder who works in your dream company. I am a student just like you and I have spent last two months searching for the internship blogs, articles and interview experiences. I applied to more than twenty companies for summer internship and [interviewed with some top companies](https://eulercoder.me/2016/02/27/My-internship-interview-experience-with-Amazon-LinkedIn-BrowserStack-Mozilla-and-Slack/) and I'd be interning at [Slack](https://www.slack.com) this summer. Read and follow things mentioned in this post at your own risk!_
 
 ![right?](https://raw.githubusercontent.com/vicky002/vicky002.github.io/602d6292eb0a5e6ab7d6ef0c65c194097bbc52fc/img/job.gif) _Run..Run fast!!_
 
-[![](http://affiliates.bigrock.com/accounts/default1/banners/7403effb.jpg)](http://www.bigrock.in/linux-php-hosting.php?594a275ddbf64&a_aid=594a275ddbf64&a_bid=7403effb)![](http://affiliates.bigrock.com/scripts/imp.php?a_aid=594a275ddbf64&a_bid=7403effb)
+[![](https://affiliates.bigrock.com/accounts/default1/banners/7403effb.jpg)](https://www.bigrock.in/linux-php-hosting.php?594a275ddbf64&a_aid=594a275ddbf64&a_bid=7403effb)![](https://affiliates.bigrock.com/scripts/imp.php?a_aid=594a275ddbf64&a_bid=7403effb)

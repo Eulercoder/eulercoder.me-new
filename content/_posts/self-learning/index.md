@@ -29,7 +29,7 @@ I really liked it, but when the time came to choose a major to pursue in my Univ
 
 I think I will skip the part where I had my miserable experiences studying Business and doing my first internships (If you are actually interested in knowing this suffering part, do check out my post on LinkedIn — [From a Business/Startup Kid to a Software Engineer Intern at Microsoft](https://www.linkedin.com/pulse/from-businessstartup-kid-software-engineer-intern-microsoft-hsu)), but anyway, that was how I started to reconsider my career choices and decided to give coding a second chance.
 
-**Read: **[Summer Internship: The Ultimate Guide Recommended by 1000+ students](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/)
+**Read: **[Summer Internship: The Ultimate Guide Recommended by 1000+ students](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/)
 
 ## Have a Clear Goal
 
@@ -63,11 +63,11 @@ Once you have your own goal, it’s the exciting fun time to mine useful resourc
 
 ## Build Your Own Projects
 
-After finishing a couple Meteor tutorials with Levelup Tutorials, I really felt empowered and had that desire and confidence to develop projects myself. At the time, I also just bumped into Dr Ray when I interned at Cocoon, a coworking space, who runs [CityU Apps Lab](http://appslab.hk/). So I randomly just asked Dr Ray if I can join his lab although I don’t even study at City University.
+After finishing a couple Meteor tutorials with Levelup Tutorials, I really felt empowered and had that desire and confidence to develop projects myself. At the time, I also just bumped into Dr Ray when I interned at Cocoon, a coworking space, who runs [CityU Apps Lab](https://appslab.hk/). So I randomly just asked Dr Ray if I can join his lab although I don’t even study at City University.
 
 He said yes. **Why not**.
 
-We were both excited really. I was the first guy to actually join his lab as a trainee I think. But yeah, this is also something I learn along the way — the Can Do Spirit. If I hadn’t interned at a coworking space, I wouldn’t have met Dr Ray. And if I hadn’t overcome the shyness and demanded challenges for myself, I wouldn’t have come to develop a file streaming web app with the lab — with which experience, I got my first internship as a developer at a wonderful startup called [25Sprout](http://www.25sprout.com/) in Taiwan.
+We were both excited really. I was the first guy to actually join his lab as a trainee I think. But yeah, this is also something I learn along the way — the Can Do Spirit. If I hadn’t interned at a coworking space, I wouldn’t have met Dr Ray. And if I hadn’t overcome the shyness and demanded challenges for myself, I wouldn’t have come to develop a file streaming web app with the lab — with which experience, I got my first internship as a developer at a wonderful startup called [25Sprout](https://www.25sprout.com/) in Taiwan.
 
 Everything above, from getting started to getting my first internship, happened in exactly one year since I started to learn to code.
 
@@ -75,11 +75,11 @@ The point is: try to always look for opportunities building projects with the te
 
 But, you may think, what if there is just no opportunity.
 
-Then **make one**. Build your own personal website for example. This is also something I think every developer should do. I also made [mine](http://kevinhsu.info/) (which I am currently revamping) when I finished FreeCodeCamp with Bootstrap. Getting one up and running isn’t just a fine exercise, you will also get to try to ship a website by buying and configuring your first domain and hosting server.
+Then **make one**. Build your own personal website for example. This is also something I think every developer should do. I also made [mine](https://kevinhsu.info/) (which I am currently revamping) when I finished FreeCodeCamp with Bootstrap. Getting one up and running isn’t just a fine exercise, you will also get to try to ship a website by buying and configuring your first domain and hosting server.
 
 ## Keep Learning
 
-Now it’s been another year since I joined 25Sprout as a summer intern. In this year, I do feel like my learning curve has not been as thrilling as it was before, but there are different exciting exposures as I started to lead and develop my dream projects with friends, had my first experience being a speaker in a [student tech conference](https://www.youtube.com/watch?v=auNTp1lc2ZE) introducing React and Meteor. I can, in fact, keep this list on and on. I met my partner to co-host a [Hackathon](http://ecjamming.tech/) that is nominated as one of the [Ten Mind-blowing Student Hackathons](https://medium.com/@dottechdomains/10-mind-blowing-student-hackathons-from-around-the-world-833c139f8026) [Medium Blog Link] from around the world, and finally now working as an intern at Microsoft, a tech giant company I am personally a fan of.
+Now it’s been another year since I joined 25Sprout as a summer intern. In this year, I do feel like my learning curve has not been as thrilling as it was before, but there are different exciting exposures as I started to lead and develop my dream projects with friends, had my first experience being a speaker in a [student tech conference](https://www.youtube.com/watch?v=auNTp1lc2ZE) introducing React and Meteor. I can, in fact, keep this list on and on. I met my partner to co-host a [Hackathon](https://ecjamming.tech/) that is nominated as one of the [Ten Mind-blowing Student Hackathons](https://medium.com/@dottechdomains/10-mind-blowing-student-hackathons-from-around-the-world-833c139f8026) [Medium Blog Link] from around the world, and finally now working as an intern at Microsoft, a tech giant company I am personally a fan of.
 
 I too had my setbacks along the way, which I mentioned in my [blog post](https://www.linkedin.com/pulse/from-businessstartup-kid-software-engineer-intern-microsoft-hsu) on Medium, but all of them have nurtured me to become more ready for my next success (if it does exist, of course, you never know).
 
@@ -91,7 +91,7 @@ That's it!
 
 This article was written by Kevin Hsu, read all his articles and [follow Kevin on Medium](https://medium.com/@kevin.wcb) also, connect with Kevin on [LinkedIn](https://www.linkedin.com/in/kai-chun-kevin-hsu-5428bbb4/).
 
-**Have something to talk about? Want to contribute in our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute in our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write in comments, your thoughts on Kevin's journey and wish him luck. :)
 
@@ -105,6 +105,6 @@ Email Address \*
 
 **Other Recommended articles:**
 
-- [Slack, Amazon, Mozilla, Browserstack, LinkedIn: My Internship Interview Experience](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+- [Slack, Amazon, Mozilla, Browserstack, LinkedIn: My Internship Interview Experience](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
-- [Basic skills needed prior to applying for internships ](http://eulercoder.me/2017/07/basic-skills-needed-internship/)
+- [Basic skills needed prior to applying for internships ](https://eulercoder.me/2017/07/basic-skills-needed-internship/)

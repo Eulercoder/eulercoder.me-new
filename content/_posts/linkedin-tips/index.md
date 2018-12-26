@@ -13,11 +13,11 @@ navigation: true
 cover: assets/images/cover/linkedin.jpg
 class: post-template
 subclass: post
-link: http://eulercoder.me/2017/08/linkedin-tips-actually-works/
+link: https://eulercoder.me/2017/08/linkedin-tips-actually-works/
 wordpress_id: 845
 ---
 
-In my experience, scrolling through job boards pumping out applications targeted at large companies isn’t the best way to go about [getting a job or internship](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/). By following a few people on LinkedIn, I managed to get into a conversation with Laszlo Bock, the Former Head of People Operations at Google. Here are a few LinkedIn tips on how to take full advantage of your LinkedIn feed.
+In my experience, scrolling through job boards pumping out applications targeted at large companies isn’t the best way to go about [getting a job or internship](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/). By following a few people on LinkedIn, I managed to get into a conversation with Laszlo Bock, the Former Head of People Operations at Google. Here are a few LinkedIn tips on how to take full advantage of your LinkedIn feed.
 
 ## LinkedIn Tips #1: Finding who to follow
 
@@ -35,17 +35,17 @@ Looking for people to follow can be daunting, but with a little effort, your Lin
 
 #### If you go to college, follow your professors! Some professors are very active outside of teaching and have very active LinkedIn profiles.
 
-Read [College and Low GPA: Everything you need to know.](http://eulercoder.me/2017/08/college-low-gpa-know-everything/)[ ](http://eulercoder.me/2017/08/college-low-gpa-know-everything/)
+Read [College and Low GPA: Everything you need to know.](https://eulercoder.me/2017/08/college-low-gpa-know-everything/)[ ](https://eulercoder.me/2017/08/college-low-gpa-know-everything/)
 
 - If you don’t go to college, you can apply this concept by following professors at nearby or prestigious universities. For example, some Stanford professors post a lot of content and are worth following.
 
 - Finally, follow all the people you know! I find it fascinating to see what people I used to work with are up to, and some are working at places I dream of working at.
 
-#### Read: [Slack Internship, San Francisco, and Silicon Valley](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
+#### Read: [Slack Internship, San Francisco, and Silicon Valley](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
 
 **Make sure to like and/or comment on things you see on LinkedIn**; your activity shows up on your profile and it looks good if your profile is lively. Being active on LinkedIn shows you care about your professional image.
 
-[![Summer Internship guide on eulercoder](http://eulercoder.me/wp-content/uploads/2017/08/Internship-in-article-post.jpg)](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/)
+[![Summer Internship guide on eulercoder](https://eulercoder.me/wp-content/uploads/2017/08/Internship-in-article-post.jpg)](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/)
 
 [clickToTweet tweet="“80% of jobs are found through networking and recommendations” " quote="“80% of jobs are found through networking and recommendations” "]
 
@@ -65,7 +65,7 @@ After a round of following people, refresh your feed and see if you like the con
 
 - **Save interesting articles: **Keeping a list of articles that had interesting content or titles for later is great for curbing boredom and you can get even more out of your feed. I try to read at least one helpful article each time I scroll through my feed.
 
-#### Have you read: [My Internship Interview Experience with Amazon, Slack, Mozilla, LinkedIn, and Browserstack? ](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+#### Have you read: [My Internship Interview Experience with Amazon, Slack, Mozilla, LinkedIn, and Browserstack? ](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
 - **Rise and repeat! **This process should be organic and repeated a few times, especially when your interests change or you switch positions. It took me about a month to get it where I was very happy with my feed, and I visited the site a couple of times a week.
 
@@ -83,7 +83,7 @@ That's all!
 
 ---
 
-**Have something to talk about? Want to contribute to our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute to our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write your comments below. 🙂
 

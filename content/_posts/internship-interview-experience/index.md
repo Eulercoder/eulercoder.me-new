@@ -15,17 +15,17 @@ navigation: true
 class: post-template
 cover: assets/images/cover/slack.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/
+link: https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/
 wordpress_id: 481
 ---
 
 In Summer 2016, I had applied to 20+ companies for Software engineering internships. Twelve companies sent me that same [Greenhouse](https://www.greenhouse.io) rejection template, three companies said their summer internship positions are full and I got shortlisted for five companies, S.
 
-**Read**: [What is the ideal time to apply for internship?](http://eulercoder.me/2017/07/what-is-the-ideal-time-to-apply-for-internships-and-jobs/)
+**Read**: [What is the ideal time to apply for internship?](https://eulercoder.me/2017/07/what-is-the-ideal-time-to-apply-for-internships-and-jobs/)
 
 [This post was written before summer 2016]
 
-I had already started my internship at [CodeChef](https://www.codechef.com) (Jan'16 - April'16), my daily schedule is 8 - 4 PM college and then 4:30 - 9,10 at CodeChef. I reach home by 11-11:30, so I used to sleep late and bunk lectures in college to prepare for the interviews. I have written about the[ interview preparation plan, books and resume tips here ](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/)read it after completing this post, Let's discuss about the interview process today.
+I had already started my internship at [CodeChef](https://www.codechef.com) (Jan'16 - April'16), my daily schedule is 8 - 4 PM college and then 4:30 - 9,10 at CodeChef. I reach home by 11-11:30, so I used to sleep late and bunk lectures in college to prepare for the interviews. I have written about the[ interview preparation plan, books and resume tips here ](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/)read it after completing this post, Let's discuss about the interview process today.
 
 <!-- more -->
 
@@ -49,7 +49,7 @@ I got rejected for a Developer Tools (Device Simulation) Intern position in Pari
 
 - Second round was on Skype.
 
-- Interview was a bit more technical but easy. I had to write [C program to reverse a singly linked list](http://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list).
+- Interview was a bit more technical but easy. I had to write [C program to reverse a singly linked list](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list).
 
 - And interviewer asked me about my projects and internship.
 
@@ -77,9 +77,9 @@ The first round was on Hackerrank. There were total 2-3 problems to solve in an 
 
 **Problems**
 
-- [Parenthesis Matching problem ](http://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
+- [Parenthesis Matching problem ](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
-- [Longest Path in Binary Tree](http://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/)
+- [Longest Path in Binary Tree](https://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/)
 
 - I don't remember the third problem.
 
@@ -87,7 +87,7 @@ Problems were easy, I solved all the three problems and moved to next round.
 
 ### Slack
 
-I had moved to the second round of Amazon internship and suddenly one day BAM! **Subject** : 'Phone Interview with [Slack](https://www.slack.com)!. I wasn't expecting this as no internship positions were mentioned on the website. I had mailed them my resume only because I really love the product and wanted to work on it. Read this : [Slack the evolution of messaging](http://eulercoder.me/2016/02/21/Slack-the-evolution-of-messaging/).
+I had moved to the second round of Amazon internship and suddenly one day BAM! **Subject** : 'Phone Interview with [Slack](https://www.slack.com)!. I wasn't expecting this as no internship positions were mentioned on the website. I had mailed them my resume only because I really love the product and wanted to work on it. Read this : [Slack the evolution of messaging](https://eulercoder.me/2016/02/21/Slack-the-evolution-of-messaging/).
 
 Now I was just focusing on this internship, I didn't want to lose this one.
 
@@ -103,7 +103,7 @@ First round was with the recruiter it was kind of behavioral interview.
 
 In the second round I was given a coding assignment with two tasks to complete in a week. Both the tasks were of medium level one Coding task and one design problem. This depends on the position you're applying for.
 
-I completed both tasks in 3-4 days and they took 4-5 days to review my solutions. I got a mail after a week saying I'm moving to the next round. Now this was very exciting I started working hard for the next interviews. Next interview was with my mentor and senior engineering manager. I solved almost 50+ problems in 3-4 days on different coding platforms like [LeetCode](https://leetcode.com) and [TopCoder](http://www.topcoder.co). I was expecting it to be very technical.
+I completed both tasks in 3-4 days and they took 4-5 days to review my solutions. I got a mail after a week saying I'm moving to the next round. Now this was very exciting I started working hard for the next interviews. Next interview was with my mentor and senior engineering manager. I solved almost 50+ problems in 3-4 days on different coding platforms like [LeetCode](https://leetcode.com) and [TopCoder](https://www.topcoder.co). I was expecting it to be very technical.
 
 **Third Round**
 
@@ -113,7 +113,7 @@ Third round was with the Manager and it wasn't very technical.
 
 After, a week I got an email saying I'm moving to the next round. Now this was so exciting and I was trying my hardest. Fourth round was very surprising. We talked about the company and my previous interviews. Finally, I was offered the internship on call.
 
-**Bonus Read:** [Summer Internship Experience, San Francisco and Silicon Valley](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
+**Bonus Read:** [Summer Internship Experience, San Francisco and Silicon Valley](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
 
 Frankly telling I had never imagined that I'd intern in the US. I accepted the offer and will be joining the company in June. Recruiting team is very friendly and helpful. I'm very excited to join the Automation and Testing Team this summer at Slack. [This post was written in 2016]
 
@@ -135,9 +135,9 @@ After the first round I mailed them about my Internship at Slack.
 
 ---
 
-[Getting a great summer internship](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/) should absolutely be your first priority, nothing else will beat the things you'll learn and experience. The amount of impact you'll end up having cannot be matched easily, especially as a student. As a third year student it was my first priority too. I applied to 20+ companies from Best of the best to average companies. One thing that I learnt in these three years is that networking is really important. You should talk to employees, recruiters and alumni. Tell them what you're doing currently, tell them about your projects, past experiences and publicize it on sites like [ProductHunt](https://www.producthunt.com), [Reddit](https://www.reddit.com/) and [Hackernews](https://news.ycombinator.com).
+[Getting a great summer internship](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/) should absolutely be your first priority, nothing else will beat the things you'll learn and experience. The amount of impact you'll end up having cannot be matched easily, especially as a student. As a third year student it was my first priority too. I applied to 20+ companies from Best of the best to average companies. One thing that I learnt in these three years is that networking is really important. You should talk to employees, recruiters and alumni. Tell them what you're doing currently, tell them about your projects, past experiences and publicize it on sites like [ProductHunt](https://www.producthunt.com), [Reddit](https://www.reddit.com/) and [Hackernews](https://news.ycombinator.com).
 
-There are so many opportunities available so the first step to getting an internship, is apply. A lot of people I know are just too afraid to apply, even to companies they really want to work at because they are waiting to get the perfect resume. Even I used to feel the same thanks to [Krish Munot](http://krishmunot.com) he's an awesome guy! Last year in december we were discussing about the internships.
+There are so many opportunities available so the first step to getting an internship, is apply. A lot of people I know are just too afraid to apply, even to companies they really want to work at because they are waiting to get the perfect resume. Even I used to feel the same thanks to [Krish Munot](https://krishmunot.com) he's an awesome guy! Last year in december we were discussing about the internships.
 
 Here is our short discussion on FB:
 
@@ -153,7 +153,7 @@ And this was true! Thanks to my family and friends for all the support.
 
 ---
 
-Also, **Read this** [guide on summer internship recommended by over 1000+ students](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/).
+Also, **Read this** [guide on summer internship recommended by over 1000+ students](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/).
 
 Friends, if you liked this article and found it useful, please share it with your friends. Let's help everyone in getting a bettern internship and job. Also if anything is not clear and you want more in-depth information about something, please join our community - [Computer Science students group ](https://www.facebook.com/groups/eulercoder/)on Fb. There will be open discussion everyday at 9 PM and there are many other people to help and guide.
 
