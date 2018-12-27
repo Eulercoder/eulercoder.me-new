@@ -59,7 +59,7 @@ const MobileNavLink = styled(Link)`
 `
 
 const MenuIcon= styled.div`
- 
+
   display: flex;
   position:absolute;
   flex-direction:column;
@@ -69,7 +69,7 @@ const MenuIcon= styled.div`
   padding: 14px;
   align-items:center;
   z-index: 999;
- 
+
 `
 
 const MenuLine=  styled.div`
@@ -110,7 +110,7 @@ const CheckBoxMenu = styled.input`
       }
     }
    }
-  
+
 `
 
 const MobileNavbar = styled.div`
@@ -126,27 +126,27 @@ const LandingSection = styled.div`
 `
 
 const LandingImage = styled.div`
-  
+
 `
 
 const PBoy = styled(ProgrammingBoy)`
  position:absolute;
- max-width:60vw; 
+ max-width:60vw;
  bottom:130px;
  right:40px;
  @media (min-width: 1800px) {
   bottom:200px;
  }
  @media(max-width: 1024px) {
-  max-width:90vw; 
+  max-width:90vw;
   bottom:270px;
  }
  @media (max-width: 900px) {
-  max-width: 60vw; 
+  max-width: 60vw;
 }
  @media (max-width: 800px) {
   position: static;
-  max-width: 100vw; 
+  max-width: 100vw;
 }
 `
 
@@ -164,7 +164,7 @@ const Information = styled.div`
     grid-template-columns: 300px 300px;
     margin: auto;
   }
-  
+
   @media (max-width:900px) {
     display:flex;
     flex-direction:column;
@@ -172,7 +172,7 @@ const Information = styled.div`
     justify-content:center;
     padding: 0px 0px;
   }
-  
+
 `
 
 const Card = styled.div`
@@ -185,7 +185,7 @@ const Card = styled.div`
   max-width: 300px;
   max-height: 240px;
   color: #fff;
- 
+
   &.cards{
     transition: all 0.1s linear;
     position:relative;
@@ -223,7 +223,7 @@ const StyledImg = styled(Img)`
   top: 0;
   left: 0;
   z-index: -10;
- 
+
 `
 
 const BlogsInfo = styled.div`
@@ -246,7 +246,7 @@ const BlogsWrapper = styled.div`
   @media (max-width:500px) {
     grid-template-columns: 300px;
   }
- 
+
   & ${Card} {
     max-width: 450px;
     background: white;
@@ -277,7 +277,7 @@ const ViewAll = styled(Link)`
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
   transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
-  
+
   &:hover {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.08);
     background: rgb(102,51,153);
@@ -356,8 +356,8 @@ const Subscribe = styled.div`
   @media (max-width: 1024px) {
 
         flex-direction:column;
-    
-  
+
+
     & input {
       width: 200px;
     }
@@ -373,7 +373,7 @@ const Subscribe = styled.div`
       margin: 10px;
       font-weight: normal;
     }
-  
+
   }
 `
 const Terms = styled.div`
@@ -400,12 +400,12 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" keywords={['gatsby', 'application', 'react', 'blogs']} />
     <CheckBoxMenu type="checkbox" id="showmenu" style={{display:"none"}} className="showmenu"/>
      <Label for="showmenu" className="menulabel">
-      <MenuIcon className="hamburger"> 
+      <MenuIcon className="hamburger">
           <MenuLine/>
           <MenuLine/>
           <MenuLine/>
-      </MenuIcon> 
-      </Label>  
+      </MenuIcon>
+      </Label>
      <MobileNavbar className="mobilenavbar">
           {[
             { name: 'blogs', link: 'blogs' },
@@ -420,7 +420,7 @@ const IndexPage = ({ data }) => (
             </MobileNavLink>
           ))}
     </MobileNavbar>
- 
+
     <Container>
       <div
         style={{
@@ -459,16 +459,17 @@ const IndexPage = ({ data }) => (
       </div>
      <LandingSection>
       <div style={{ padding: '13vh 0 0 0' }}>
-        <h1 style={{fontSize:"56px"}}>Hi People</h1>
-        <p style={{fontSize:18}}>Welcome to Eulercoder.</p>
-        <p style={{fontSize:18}}>Now build something great.</p>
+        <h1 style={{fontSize:"56px"}}>Hello!</h1>
+        <p style={{fontSize:30}}>Welcome to all new Eulercoder.</p>
+        <p style={{fontSize:18}}>We are opening our platform for developers and companies,<br></br>
+        now everyone can write blog posts, post jobs <br></br>and showcase your projects.</p>
       </div>
       <LandingImage>
       <PBoy />
       </LandingImage>
      </LandingSection>
     </Container>
-   
+
     <Information>
       {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }, i) => (
         <Card key={"cards" + i} className="cards">
