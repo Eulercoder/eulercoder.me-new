@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { DiscussionEmbed } from 'disqus-react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -138,6 +138,16 @@ const Project = ({ data, pageContext: { prev, next } }) => {
     github,
     twitter,
   } = project.frontmatter
+
+  const post = data.markdownRemark
+  // const siteTitle = title;
+  // const { previous, next } = this.props.pathContext;
+  const disqusShortname = 'vicky002'
+  const disqusConfig = {
+    identifier: post.id,
+    title: title,
+  }
+
   return (
     <Layout
       style={{
@@ -203,6 +213,16 @@ const Project = ({ data, pageContext: { prev, next } }) => {
           style={{ marginBottom: '2rem' }}
         />
         <Body dangerouslySetInnerHTML={{ __html: project.html }} />
+        <ul>
+          {next && (
+            <li>
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            </li>
+          )}
+        </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Container>
     </Layout>
   )
