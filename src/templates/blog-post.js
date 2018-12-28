@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { DiscussionEmbed } from 'disqus-react'
 import styled from 'styled-components'
 import { graphql, Link } from 'gatsby'
 
@@ -105,6 +105,13 @@ const Right = styled(StyledNext)`
 const Blogs = ({ data, pageContext: { prev, next } }) => {
   const post = data.markdownRemark
   const { author, date, title } = post.frontmatter
+  // const siteTitle = title
+  // const { previous, next } = pathContext
+  const disqusShortname = 'vicky002'
+  const disqusConfig = {
+    identifier: post.id,
+    title: title,
+  }
   return (
     <Layout
       style={{
@@ -140,6 +147,16 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
             </Right>
           )}
         </Navigation>
+        <ul>
+          {next && (
+            <li>
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            </li>
+          )}
+        </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Container>
     </Layout>
   )
