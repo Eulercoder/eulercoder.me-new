@@ -4,6 +4,7 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="471 -227.2 1041.3 554.2" style="enable-background:new 471 -227.2 1041.3 554.2;" xml:space="preserve">
 <style type="text/css">
+	.st{opacity: 0.3}
 	.st0{opacity:0.1;fill:#F6F6F6;enable-background:new    ;}
 	.st1{opacity:0.1;}
 	.st2{fill:#F6F6F6;}
@@ -19,6 +20,7 @@
 	.st12{fill:none;stroke:#D4DFEC;stroke-width:1.172;stroke-miterlimit:10;}
 </style>
 <title>programming</title>
+<g class="st">
 <path class="st0" d="M1432.5,211c-1.2,2.5-2.3,5-3.5,7.4c-1.8,3.8-3.6,7.5-5.3,11.1c-0.8,1.6-1.6,3.2-2.3,4.8
 	c-8.6,17.6-16.6,33.1-23.5,45.9c-12.6,23.6-37.1,38.4-63.8,38.7l-151.6,1.7h-1.6l-13,0.1l-11.1,0.1l-34.1,0.4h-1.4l-17.4,0.2h-0.5
 	l-107,1.2l-95.5,1l-11.1,0.1l-69,0.8h-0.1l-44.8,0.5h-0.5l-141.5,1.5l-42.3,0.5c-9,0.1-18-1.2-26.7-3.8c-15-4.5-28.6-13.1-39.1-24.8
@@ -227,4 +229,5 @@
 <line class="st11" x1="1140.4" y1="-56.5" x2="1241.9" y2="-61.5"/>
 <line class="st11" x1="1141.2" y1="-44" x2="1242.7" y2="-49"/>
 <line class="st11" x1="1141.9" y1="-31.6" x2="1243.4" y2="-36.6"/>
+</g>
 </svg>

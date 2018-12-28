@@ -4,16 +4,24 @@ import SEO from '../components/seo'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import { ReactComponent as ProgrammingBoy } from '../images/ProgrammingBoy.svg'
+import ProgrammingImg from '../images/ProgrammingBoy.svg'
 
 import { Title, Date, Author, Body } from '../components/blog'
 
 const Container = styled.div`
-  background: rgb(102,51,153);
   background: linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
+  background-image: url(${props=> props.img});
+  background-color: rgb(102,51,153);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right bottom;
   color: white;
   height: 80vh;
   padding: 0 10vw;
+  @media (max-width: 1024px) {
+    background-position: center bottom;
+    background-size: 90%;
+  }
   @media (max-width: 800px) {
     height: 75vh;
   }
@@ -119,35 +127,16 @@ const MobileNavbar = styled.div`
 
 const LandingSection = styled.div`
   display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   flex-direction: row;
+  justify-content:evenly;
   @media (max-width: 1000px) {
     flex-direction: column;
   }
 `
 
 const LandingImage = styled.div`
-
-`
-
-const PBoy = styled(ProgrammingBoy)`
- position:absolute;
- max-width:60vw;
- bottom:130px;
- right:40px;
- @media (min-width: 1800px) {
-  bottom:200px;
- }
- @media(max-width: 1024px) {
-  max-width:90vw;
-  bottom:270px;
- }
- @media (max-width: 900px) {
-  max-width: 60vw;
-}
- @media (max-width: 800px) {
-  position: static;
-  max-width: 100vw;
-}
+  z-index:0;
 `
 
 const Information = styled.div`
@@ -392,7 +381,20 @@ const TermsLink = styled(Link)`
   }
 `
 
-
+const CardInfo = [
+                  {
+                    title:"Card One",
+                    description:"This is card 1"
+                  },
+                  {
+                    title:"Card two",
+                    description:"Description 2"
+                  },
+                  {
+                    title:"Card 3",
+                    description:"This is card 3"
+                  },
+                ]
 
 
 const IndexPage = ({ data }) => (
@@ -421,12 +423,12 @@ const IndexPage = ({ data }) => (
           ))}
     </MobileNavbar>
 
-    <Container>
+    <Container img={ProgrammingImg} >
       <div
         style={{
           display: 'flex',
           alignItems: 'flex-end',
-          padding: '40px 0',
+          padding: '20px 0',
         }}
       >
         <h2 style={{ margin: 0 }}>
@@ -458,14 +460,14 @@ const IndexPage = ({ data }) => (
         </NavBar>
       </div>
      <LandingSection>
-      <div style={{ padding: '13vh 0 0 0' }}>
+      <div style={{ padding: '10vh 0 0 0', zIndex:2 }}>
         <h1 style={{fontSize:"56px"}}>Hello!</h1>
         <p style={{fontSize:30}}>Welcome to all new Eulercoder.</p>
         <p style={{fontSize:18}}>We are opening our platform for developers and companies,<br></br>
         now everyone can write blog posts, post jobs <br></br>and showcase your projects.</p>
       </div>
       <LandingImage>
-      <PBoy />
+        
       </LandingImage>
      </LandingSection>
     </Container>
@@ -474,8 +476,8 @@ const IndexPage = ({ data }) => (
       {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }, i) => (
         <Card key={"cards" + i} className="cards">
           <InfoContainer>
-            <div>First Card</div>
-            <h2>Card Info</h2>
+            <h2>{`${CardInfo[i].title}`}</h2>
+            <h4>{`${CardInfo[i].description}`}</h4>
           </InfoContainer>
           <StyledImg fluid={fluid} style={{ position: 'absolute' }} />
         </Card>
