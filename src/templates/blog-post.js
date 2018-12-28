@@ -10,7 +10,7 @@ import { ReactComponent as Arrow } from '../icons/arrow.svg'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   max-width: 760px;
 `
 
@@ -56,10 +56,17 @@ const Date = styled.div`
   align-self: center;
 `
 const Body = styled.div`
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 0.6rem;
+  
   font-weight: normal;
+  & a {
+    color: rebeccapurple;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const Author = styled(Link)`
@@ -77,6 +84,9 @@ const Author = styled(Link)`
 const Navigation = styled.div`
   display: flex;
   width: 100%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 const StyledNext = styled(Link)`
@@ -100,6 +110,7 @@ const StyledNext = styled(Link)`
   }
 `
 const Left = styled(StyledNext)`
+  margin-top: 20px;
   & svg {
     transform: rotate(180deg);
   }
@@ -116,6 +127,7 @@ const Left = styled(StyledNext)`
 
 const Right = styled(StyledNext)`
   margin-left: auto;
+  margin-top: 20px;
   & svg {
     transform: rotate(0deg);
   }
@@ -129,8 +141,10 @@ const Right = styled(StyledNext)`
     margin-right: -24px;
   }
 `
+
 const Subscribe = styled.div`
-  padding: 60px 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -211,14 +225,15 @@ const Subscribe = styled.div`
 const SubscribeBottom = styled(Subscribe)`
   
     & input {
-      height: 44px;
+      height: 48px;
       font-size: 18px;
       padding: 0px;
       padding-left: 10px;
       color: rebeccapurple;
       width: 340px;
       margin-right: 10px;
-      border: 2px solid rgba(81,24,138,0.6);
+      padding-left: 16px;
+      border: 2px solid rgba(81,24,138,0.8);
       border-radius: 30px;
       box-sizing: border-box;
       transition: 0.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -229,9 +244,21 @@ const SubscribeBottom = styled(Subscribe)`
         box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08),
           0 6px 12px rgba(0, 0, 0, 0.08);
         transform: translateY(-3px);
+        border: 2px solid rebeccapurple;
       }
     }
+    
+     
+    
 
+     & input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset;
+      background-color: rgb(255, 0, 0) !important;
+      background-image: none !important;
+      color: rgb(0, 0, 0) !important;
+      -webkit-text-fill-color: rebeccapurple !important;
+        
+     }
 
     & button {
       font-size: 18px;
@@ -259,7 +286,7 @@ const SubscribeBottom = styled(Subscribe)`
       
     
       & input {
-        width: 200px;
+        width: 220px;
       }
   
       & button {
@@ -307,6 +334,14 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
         </Category>
         <Title>{title}</Title>
         <Body dangerouslySetInnerHTML={{ __html: post.html }} />
+        <SubscribeBottom>
+        <form action="" method="post">
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <input type="email" name="email" id="subscription-email" placeholder="your@email.com" spellcheck="false" required/>
+            <button type="submit">Subscribe</button>
+          </div>
+          </form>
+      </SubscribeBottom>
         <Navigation>
           {prev && (
             <Left to={prev.fields.slug}>
@@ -327,13 +362,7 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
             </Right>
           )}
         </Navigation>
-       
-        <SubscribeBottom>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <input type="text" id="subscription-email" placeholder="your@email.com" />
-          <button>Subscribe</button>
-        </div>
-      </SubscribeBottom>
+      
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Container>
     </Layout>

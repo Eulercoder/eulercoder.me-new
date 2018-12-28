@@ -42,7 +42,6 @@ const JobSection = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 280px;
     margin-left: 10px;
     & a {
         text-decoration: none;
@@ -70,7 +69,10 @@ const Techstacks = styled.div`
     align-items:center;
     flex-wrap:wrap;
     margin: 2px 2px;
-    
+    width: 280px;
+    @media (max-width: 390) {
+        width: 280px;
+    }
     
     & p {
         padding: 3px !important;
@@ -132,18 +134,17 @@ const JobPage = ({data})=> {
             </JobSectionWithImage>
             <p className="location" style={{width:200}}>Location: <b>{location}</b></p>
             <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
-            <Techstacks style={{width:320}}>
+            <Techstacks>
             {techstack.split(",").slice(0,5).map((tech, i)=>
                <p key={tech + i}>{tech}</p>     
             )
             }
             </Techstacks>
-            <span>Date Posted: <em>{date}</em></span>
+            <span>Date Posted: <span style={{color: "grey"}}>{date}</span></span>
             <ApplyJob href={jobURL} target="_blank" rel="noopener noreferrer">Apply</ApplyJob>
             </JobWrap>
     </Job>
         <Body dangerouslySetInnerHTML={{ __html : jobdata.html}}/>
-   
     </Layout>
 
 )
@@ -168,7 +169,7 @@ query($slug: String!) {
            location
            category
            techstack
-           date
+           date(formatString: "DD MMMM, YYYY")
       }
     }
 }

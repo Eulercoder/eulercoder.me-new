@@ -16,6 +16,7 @@ const JobWrap = styled(Link)`
       display:none;
   }
 }
+-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 `
 
 const StyledImg = styled(Img)`
@@ -94,6 +95,7 @@ const Techstacks = styled.div`
         &:hover {
             background:linear-gradient(207deg, rgba(102,51,153,0.9) 10%, rgba(81,24,138,1) 73%);
             color: white;
+            border: 1px solid #F9F9F9;
         }
     }
 `
@@ -266,11 +268,11 @@ export default class JobsPage extends Component {
                 <p className="category" style={{width:200}}>Category: <b>{category}</b></p>
                 <Techstacks style={{width:320}}>
                 {techstack.split(",").slice(0,5).map((tech, i)=>
-                   <p key={tech + i} onClick={(e)=>{ e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()},()=>{this.searchtechbutton.click();});   }} >{tech}</p>     
+                   <p key={tech + "all" + i} onClick={(e)=>{ e.preventDefault(); this.setState({inputTechType: tech.toLowerCase().trim(), techType: tech.toLowerCase().trim()},()=>{this.searchtechbutton.click();});   }} >{tech}</p>     
                 )
                 }
                 </Techstacks>
-                <span>Date Posted: <em>{date}</em></span>
+                <span>Date Posted: <span style={{color: "grey"}}>{date}</span></span>
                 </JobWrap>
             </Job>);
             else return <React.Fragment></React.Fragment>
@@ -315,7 +317,7 @@ export const query = graphql`
                       location
                       category
                       techstack
-                      date
+                      date(formatString: "DD MMMM, YYYY")
                   }
               }
           }

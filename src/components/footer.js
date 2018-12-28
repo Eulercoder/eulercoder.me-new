@@ -45,6 +45,13 @@ const Subscribe = styled.div`
     }
   }
 
+  
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    background-color: white !important;
+    background-image: none !important;
+    -webkit-text-fill-color: rebeccapurple !important;  
+   }
 
   & button {
     font-size: 18px;
@@ -99,7 +106,7 @@ const TermsLink = styled(Link)`
   text-decoration: none;
   margin-right: 10px;
   cursor: pointer;
-  color: #fff8;
+  color: #cccccc;
   padding: 10px 0px;
   &:hover {
     color: #fff;
@@ -112,10 +119,12 @@ const TermsLink = styled(Link)`
             <h4>{'Eulercoder Newsletter'.toUpperCase()}</h4>
             <h3>Subscribe for all the latest posts</h3>
           </div>
+          <form action="" method="post">
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input type="text" id="subscription-email" placeholder="your@email.com" />
-            <button>Subscribe</button>
+            <input type="email" name="email" id="subscription-email" placeholder="your@email.com" spellcheck="false" required/>
+            <button type="submit">Subscribe</button>
           </div>
+          </form>
         </Subscribe>
         <Terms>
         <TermsLink>Terms & Conditions</TermsLink>

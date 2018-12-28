@@ -94,7 +94,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            date
+            date(formatString: "DD MMMM, YYYY")
             author {
               id
             }

@@ -12,6 +12,11 @@ const Container = styled.div`
     padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 760px;
   width: 80vw;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+  @media (max-width:728px) {
+    width: 90vw;
+    padding: 1.4rem 2rem;
+  }
   margin-top: 20px;
   &:hover {
     box-shadow: 0 10px 42px rgba(25, 17, 34, 0.1);
@@ -21,6 +26,7 @@ const Container = styled.div`
     box-shadow: 0 3px 10px rgba(25, 17, 34, 0.05);
     transform: translateY(0px);
   }
+  
 `
 export const Title = styled.h2`
   margin-top: 1.6rem;

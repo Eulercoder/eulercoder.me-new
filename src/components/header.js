@@ -37,10 +37,10 @@ const MobileNavLink = styled(Link)`
 const MenuIcon= styled.div`
  
   display: flex;
-  position:absolute;
+  position: fixed;
   flex-direction:column;
   top:8px;
-  right:30px;
+  right:20px;
   justify-content:flex-end;
   padding: 14px;
   align-items:center;
@@ -94,6 +94,7 @@ const MobileNavbar = styled.div`
 `
 
 const Header = ({ siteTitle }) => (
+  <>
   <div
     style={{
       background: 'white',
@@ -146,30 +147,31 @@ const Header = ({ siteTitle }) => (
           </NavLink>
         ))}
       </NavBar>
-      <CheckBoxMenu type="checkbox" id="showmenu" style={{display:"none"}} className="showmenu"/>
-     <Label for="showmenu" className="menulabel">
-      <MenuIcon className="hamburger"> 
-          <MenuLine/>
-          <MenuLine/>
-          <MenuLine/>
-      </MenuIcon> 
-      </Label>  
-     <MobileNavbar className="mobilenavbar">
-          {[
-            { name: 'blogs', link: 'blogs' },
-            { name: 'projects', link: 'projects' },
-            { name: 'contact us', link: 'contactus' },
-            { name: 'about us', link: 'aboutus' },
-            { name: 'jobs', link: 'jobs' },
-            { name: 'work with us', link: '/' },
-          ].map(item => (
-            <MobileNavLink key={item.name} to={`/${item.link}/`}>
-              {item.name.toUpperCase()}
-            </MobileNavLink>
-          ))}
-    </MobileNavbar>
     </div>
   </div>
+   <CheckBoxMenu type="checkbox" id="showmenu" style={{display:"none"}} className="showmenu"/>
+   <Label for="showmenu" className="menulabel">
+    <MenuIcon className="hamburger"> 
+        <MenuLine/>
+        <MenuLine/>
+        <MenuLine/>
+    </MenuIcon> 
+    </Label>  
+   <MobileNavbar className="mobilenavbar">
+        {[
+          { name: 'blogs', link: 'blogs' },
+          { name: 'projects', link: 'projects' },
+          { name: 'contact us', link: 'contactus' },
+          { name: 'about us', link: 'aboutus' },
+          { name: 'jobs', link: 'jobs' },
+          { name: 'work with us', link: '/' },
+        ].map(item => (
+          <MobileNavLink key={item.name} to={`/${item.link}/`}>
+            {item.name.toUpperCase()}
+          </MobileNavLink>
+        ))}
+  </MobileNavbar>
+  </>
 )
 
 export default Header
