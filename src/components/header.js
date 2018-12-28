@@ -101,6 +101,7 @@ const Header = ({ siteTitle }) => (
       position: 'fixed',
       width: '100vw',
       zIndex: 100,
+      padding: '0 10vw',
     }}
   >
     <div
@@ -127,8 +128,8 @@ const Header = ({ siteTitle }) => (
         {[
           { name: 'blogs', link: 'blogs' },
           { name: 'projects', link: 'projects' },
-          { name: 'about us', link: '/aboutus'},
           { name: 'contact us', link: '/contactus'},
+          { name: 'about us', link: '/aboutus'},
           { name: 'jobs', link: '/jobs'},
           { name: 'work with us', link: '/' },
         ].map(item => (
