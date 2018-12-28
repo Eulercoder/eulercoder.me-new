@@ -11,7 +11,7 @@ cover: assets/images/cover/internship_first.jpg
 subclass: post
 ---
 
-[In the last article](http://blog.eulercoder.me/p/ultimate-course.html), we read about this course on getting software engineering internship and jobs. The course contains series of articles on internships and jobs right from the preparation plan to the first day of the job. If you are visiting this page directly I'd suggest you go and check out [the roadmap for Software engineering jobs.](http://blog.eulercoder.me/p/ultimate-course.html) (Link to Roadmap)
+[In the last article](https://blog.eulercoder.me/p/ultimate-course.html), we read about this course on getting software engineering internship and jobs. The course contains series of articles on internships and jobs right from the preparation plan to the first day of the job. If you are visiting this page directly I'd suggest you go and check out [the roadmap for Software engineering jobs.](https://blog.eulercoder.me/p/ultimate-course.html) (Link to Roadmap)
 
 So let's get started!
 
@@ -26,9 +26,9 @@ Many students ask me, what is the perfect time to apply for internships. So in t
 So, The ideal time is the summer vacation and you'll have more weeks to spend at the company and learn more. Now let's talk about the year of engineering.
 
 As you all would be already knowing, students generally look for internships and do internships after 3rd year and before the final year (Winter). Many students (me included) do apply and intern in 2nd year as well. It totally depends on your knowledge and how strong is your resume. If you have done something, if you have achieved something in your 2nd year then definitely you should apply for internships in 2nd-year vacations.
-**
+\*\*
 
-\*\***Final Words: \*\*_Best time to apply for an internship is the summer vacation mostly after 3rd year. If you have the knowledge and you are very good at something specific (Web development, UI, UX or any specific field), you can and you should look for an internship in your 2nd year as well. _
+\*\*\*\*Final Words: \*\*_Best time to apply for an internship is the summer vacation mostly after 3rd year. If you have the knowledge and you are very good at something specific (Web development, UI, UX or any specific field), you can and you should look for an internship in your 2nd year as well. _
 
 #### **And, Ideal time for jobs?**
 
@@ -40,7 +40,7 @@ If you are graduating this year and looking for jobs then, most companies start 
 
 Sometimes it happens that students target few specific company and deadline is already ended for that. If there are no internships mentioned on the website or it just says "Position is closed.". The best thing to do in such cases is to send a mail to the company attaching your resume and cover letter and, trying to convince them that you would be worth engaging as an intern. You have to show them you achievements, work and explain them why you can be a great intern.
 
-**My story: **_I was looking for an \_internship_ at Slack, I really wanted to work there but no internship openings were mentioned on the website. So I had applied for the full-time job role from the jobs page and mentioned that I'm looking for an _internship_ and it worked! Later [I got a full-time job offer from Slack](http://eulercoder.me/blog/career/slack-experience-sf-and-silicon-valley) (article link). _So_, friends, everything works. It totally depends on how badly you want to achieve and get something. \_
+**My story: **_I was looking for an \_internship_ at Slack, I really wanted to work there but no internship openings were mentioned on the website. So I had applied for the full-time job role from the jobs page and mentioned that I'm looking for an _internship_ and it worked! Later [I got a full-time job offer from Slack](https://eulercoder.me/blog/career/slack-experience-sf-and-silicon-valley) (article link). _So_, friends, everything works. It totally depends on how badly you want to achieve and get something. \_
 
 \_ \_
 

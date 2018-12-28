@@ -6,7 +6,7 @@ categories:
   - internship
 tags:
   - discussion
-  - internshi
+  - internship
 author: vicky002
 comments: true
 layout: post
@@ -15,7 +15,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/analyse.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/three-internships-mandatory/
+link: https://eulercoder.me/2017/07/three-internships-mandatory/
 wordpress_id: 573
 ---
 
@@ -31,7 +31,7 @@ As per the report, there are more than 6500+ engineering colleges in India. The 
 
 Now, in the first year of engineering, rarely any student does an internship. They just start the four-year degree course without any prior knowledge of programming.
 
-**Extra Read:** [What is the ideal time to apply for an internship?](http://eulercoder.me/2017/07/what-is-the-ideal-time-to-apply-for-internships-and-jobs/)
+**Extra Read:** [What is the ideal time to apply for an internship?](https://eulercoder.me/2017/07/what-is-the-ideal-time-to-apply-for-internships-and-jobs/)
 
 In the second year, we learn about C, Java, Data Structures, Algorithms and about Web development. The education minister said it will be college's responsibility to provide internships to students. So, now every student and college faculty also will ask students to start looking for internships after the second year. Consider there are at least 240 students in an engineering college, out of them 40 secured internships on their own. For a college helping 200 students internship in different companies and startups is going to be a tough task. Competition for getting an internship will increase as everyone will be worried about the internship, career, and job.
 
@@ -43,13 +43,13 @@ I am not saying this is very bad. It is good, rather than sitting at home you wi
 
 ### If I have just two internships in my resume, will this affect me?
 
-No, I don't think so. For a company, your skills and how you perform in the interview is all that matters the most. Yes, having two or more internships and good projects will definitely help you a lot to get shortlisted. You will have higher chances of getting an interview than those with one internship only. Again, there are so many factors, it will depend on the company you interned, your role there, how solid if your personal projects etc. I am not going into too many details. You can read my [summer internship guide here which is recommended by over 1000+ students](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/) on the web and it is one of the top guide available currently.
+No, I don't think so. For a company, your skills and how you perform in the interview is all that matters the most. Yes, having two or more internships and good projects will definitely help you a lot to get shortlisted. You will have higher chances of getting an interview than those with one internship only. Again, there are so many factors, it will depend on the company you interned, your role there, how solid if your personal projects etc. I am not going into too many details. You can read my [summer internship guide here which is recommended by over 1000+ students](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/) on the web and it is one of the top guide available currently.
 
 ### To the students who will be starting their Engineering Course
 
 If you are going to start your engineering course very soon starting next month. I'd say do not worry about this right now. This is not going to be implemented very soon, so don't panic. You are just starting your engineering, enjoy the beginning, do networking, take part in events and **learn to program. **Work on your programming skills in your second year, solve problems on Hackerrank or CodeChef. Try open source development. Try everything and find your love for something and do it well.
 
-**Read:** [Competitive Programming or Open Source: Which one to choose?](http://eulercoder.me/2017/07/competitive-programming-open-source/)
+**Read:** [Competitive Programming or Open Source: Which one to choose?](https://eulercoder.me/2017/07/competitive-programming-open-source/)
 
 **Try for internships after:**
 
@@ -71,9 +71,9 @@ Thank you!
 
 ** My Story **
 
-- [Slack, Amazon, LinkedIn, Browserstack, Mozilla - My Internship Interview Experience](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+- [Slack, Amazon, LinkedIn, Browserstack, Mozilla - My Internship Interview Experience](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
-- [Summer Internship, San Francisco, and Silicon Valley](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
+- [Summer Internship, San Francisco, and Silicon Valley](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
   <!-- more -->
 
 ---

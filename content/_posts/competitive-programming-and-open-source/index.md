@@ -12,7 +12,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/question.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/competitive-programming-open-source/
+link: https://eulercoder.me/2017/07/competitive-programming-open-source/
 wordpress_id: 313
 ---
 
@@ -72,7 +72,7 @@ Here I'm referring to Open source development
 
 - It takes **lot of time and effort** but trust me that feeling of creating a software or application is amazing! Recently my friend create a bot for Slack which integrate with [Moodle](https://moodle.org) to show all your upcoming submissions. He was telling me about how he spent last ten days working on this and how it feels after finalizing the product.
 
-## Can only competitive programming get you placed or get you a good [internship](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)?
+## Can only competitive programming get you placed or get you a good [internship](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)?
 
 **Absolutely Not!!** (Assuming that you don't any contacts in top companies, those who can refer you for the interviews!)
 
@@ -93,7 +93,7 @@ The toughest part in getting a job is to get shortlisted for the interviews. Big
     * Once you get shortlisted then you also need to have good knowledge of algorithms and data structures.
 
 
-    * To learn Algo and DS you need to read and practice on website like [Geeksforgeeks](http://www.geeksforgeeks.org), [CodeChef](https://codechef.com), [TopCoder](https://www.topcoder.com), [LeetCode](https://leetcode.com), [CareerCup](https://www.careercup.com).
+    * To learn Algo and DS you need to read and practice on website like [Geeksforgeeks](https://www.geeksforgeeks.org), [CodeChef](https://codechef.com), [TopCoder](https://www.topcoder.com), [LeetCode](https://leetcode.com), [CareerCup](https://www.careercup.com).
 
 
     * You also need a medium level communication skills.

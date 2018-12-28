@@ -14,11 +14,11 @@ navigation: true
 class: post-template
 cover: assets/images/cover/get-started.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/getting-started-open-source/
+link: https://eulercoder.me/2017/07/getting-started-open-source/
 wordpress_id: 145
 ---
 
-After my post on [Competitive programming or Open Source development which one to choose?](http://eulercoder.me/2017/07/competitive-programming-open-source/), I received so many emails asking How to start with open source. I wanted to write about this since a very long time so as the title suggests, this blog post is for beginners who want to work on their own projects or contribute to other open source projects. **This is going to be a long post so grab some snacks, take a notebook and make a note of points that you think may help in the future.**
+After my post on [Competitive programming or Open Source development which one to choose?](https://eulercoder.me/2017/07/competitive-programming-open-source/), I received so many emails asking How to start with open source. I wanted to write about this since a very long time so as the title suggests, this blog post is for beginners who want to work on their own projects or contribute to other open source projects. **This is going to be a long post so grab some snacks, take a notebook and make a note of points that you think may help in the future.**
 
 Before we start, Don't think about:
 
@@ -183,7 +183,7 @@ You must be knowing about this. Open source contributions matter a lot. I get so
 
 #### Friends
 
-Lots of conversation that started on Github turn into friendships that extend to Twitter. It gets really fun when you meet these awesome people in real life and I'm super excited to meet few people during [my internship at Slack in San Francisco](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/). Friends make open source fun and rewarding.
+Lots of conversation that started on Github turn into friendships that extend to Twitter. It gets really fun when you meet these awesome people in real life and I'm super excited to meet few people during [my internship at Slack in San Francisco](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/). Friends make open source fun and rewarding.
 
 ### Helping others
 
@@ -207,6 +207,6 @@ Ohh [see a typo](https://github.com/vicky002/vicky002.github.io/blob/master/_pos
 
 [Tweet](https://twitter.com/share)
 
-You may also like: [Competitve Programming or Open Source](http://eulercoder.me/2017/07/competitive-programming-open-source/) | [My interview experience with Slack, Mozilla, LinkedIn, Browserstack and Amazon](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+You may also like: [Competitve Programming or Open Source](https://eulercoder.me/2017/07/competitive-programming-open-source/) | [My interview experience with Slack, Mozilla, LinkedIn, Browserstack and Amazon](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
 Thank you.

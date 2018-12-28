@@ -15,13 +15,13 @@ navigation: true
 class: post-template
 cover: assets/images/cover/slack-bot.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/create-slack-bot-using-wolframalpha-api/
+link: https://eulercoder.me/2017/07/create-slack-bot-using-wolframalpha-api/
 wordpress_id: 272
 ---
 
 I read a thread on Reddit about WolframAlpha API and I decided to try my hands on it. I created two slack Bot using WolframAlpha and both work very nicely see some of the best tweets from [L](https://twitter.com/The_L__). There is an issue with WolframAlpha API it allows only 2000 API calls in a month, you need to take their paid plans if you make heavy usages.
 
-Ok, before we start the tutorial, I would like to mention, if you are preparing for the internship or full-time job, make sure you read one of the best guides currently available on the web: [Summer Internship - The Ultimate Guide.](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/) And, if you want to contribute to Open Source projects like this Slack bot, I highly recommend you to read our[ Getting started with Open Source Guide](http://eulercoder.me/2017/07/getting-started-open-source/).
+Ok, before we start the tutorial, I would like to mention, if you are preparing for the internship or full-time job, make sure you read one of the best guides currently available on the web: [Summer Internship - The Ultimate Guide.](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/) And, if you want to contribute to Open Source projects like this Slack bot, I highly recommend you to read our[ Getting started with Open Source Guide](https://eulercoder.me/2017/07/getting-started-open-source/).
 
 Ok so let's get started.
 
@@ -42,11 +42,11 @@ You need basic knowledge of python to create your own Slack Bot.
 
       * Go to [My apps](https://developer.wolframalpha.com/portal/myapps/index.html) section and click on Get an AppID.
 
-  ![get App ID - Wolframalpha Eulercoder](http://eulercoder.me/wp-content/uploads/2017/07/Webp.net-compress-image.jpg)
+![get App ID - Wolframalpha Eulercoder](https://eulercoder.me/wp-content/uploads/2017/07/Webp.net-compress-image.jpg)
 
       * Note your AppID. You will use this AppID to make calls.
 
-* [Heroku](https://www.heroku.com)
+- [Heroku](https://www.heroku.com)
 
       * Go to Heroku and create an account there. Heroku allows you to deploy maximum 5 apps on the cloud for free.
 
@@ -56,7 +56,7 @@ You need basic knowledge of python to create your own Slack Bot.
 
       * Click on the '+' sign or 'New' on the top right, create a new app.
 
-  ![Create new app - heroku](http://eulercoder.me/wp-content/uploads/2017/07/heroku-new-app.png)
+![Create new app - heroku](https://eulercoder.me/wp-content/uploads/2017/07/heroku-new-app.png)
 
       * Write the name and click on Create App.
 
@@ -91,7 +91,7 @@ You need basic knowledge of python to create your own Slack Bot.
 
 ## Step 3: Upload your code to Dropbox
 
-- open your [Dropbox](http://eulercoder.me/recommends/dropbox/) account.
+- open your [Dropbox](https://eulercoder.me/recommends/dropbox/) account.
 
 - If you have connected your account to Dropbox as mentioned in step 1. Open this [link](https://www.dropbox.com/home/Apps/Heroku).
 
@@ -145,7 +145,7 @@ You need basic knowledge of python to create your own Slack Bot.
 
 # Explanation of the Code
 
-I already explained usages of the files in the directory. I created this Slack Bot using [WolframAlpha Module](https://pypi.python.org/pypi/wolframalpha) and [Flask](http://flask.pocoo.org/) framework. You should know working with Python modules and all the syntax to understand the code.
+I already explained usages of the files in the directory. I created this Slack Bot using [WolframAlpha Module](https://pypi.python.org/pypi/wolframalpha) and [Flask](https://flask.pocoo.org/) framework. You should know working with Python modules and all the syntax to understand the code.
 
     <code class="language-python">__author__ = 'vikesh'  # this is the author name
 
@@ -210,15 +210,15 @@ I already explained usages of the files in the directory. I created this Slack B
         port = int(os.environ.get('PORT',5000))    # run your app on local
         app.run(host='0.0.0.0', port=port)</code>
 
-Please comment below for the issues related to the post and anything related to My Slack bot Please use the [issue tracker](https://github.com/vicky002/slack-TheL/issues) to report any bugs or file feature requests. You can also join [Eulercoder](http://eulercoder.me/about/) Organization on Github, just us [an email ](mailto:hi@eulercoder.me)with following details - Your Name, Your Education level and whether you want to join as a contributor or a mentor.
+Please comment below for the issues related to the post and anything related to My Slack bot Please use the [issue tracker](https://github.com/vicky002/slack-TheL/issues) to report any bugs or file feature requests. You can also join [Eulercoder](https://eulercoder.me/about/) Organization on Github, just us [an email ](mailto:hi@eulercoder.me)with following details - Your Name, Your Education level and whether you want to join as a contributor or a mentor.
 
 ---
 
-**Have something to talk about? Want to [contribute](http://eulercoder.me/contribute/) to our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to [contribute](https://eulercoder.me/contribute/) to our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write your comments below. 🙂
 
-If you found this article useful, do share with your friends. Let’s help everyone in becoming a better developer and help them in learning programming. [Subscribe to our newsletter](http://eepurl.com/bRklFn) and get weekly curated content directly in your mail box. Also, we have our own group on FB, we take Q&A, post materials in the group. I’ll highly recommend you Like [our FB page](https://www.facebook.com/eulercoder) and [join our FB Group.](https://www.facebook.com/groups/eulercoder) for discussions and latest updates.
+If you found this article useful, do share with your friends. Let’s help everyone in becoming a better developer and help them in learning programming. [Subscribe to our newsletter](https://eepurl.com/bRklFn) and get weekly curated content directly in your mail box. Also, we have our own group on FB, we take Q&A, post materials in the group. I’ll highly recommend you Like [our FB page](https://www.facebook.com/eulercoder) and [join our FB Group.](https://www.facebook.com/groups/eulercoder) for discussions and latest updates.
 
 ## Subscribe to our mailing list
 

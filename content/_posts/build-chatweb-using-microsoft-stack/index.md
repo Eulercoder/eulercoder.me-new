@@ -15,7 +15,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/chatweb.jpeg
 subclass: post
-link: http://eulercoder.me/2017/09/build-chatweb-using-microsoft-stack/
+link: https://eulercoder.me/2017/09/build-chatweb-using-microsoft-stack/
 ---
 
 Just another weekend to C&C (Chill & Code) in Taiwan
@@ -25,7 +25,7 @@ Just another weekend to C&C (Chill & Code) in Taiwan
 
 ### ChatWeb?
 
-Chatbot has been a hot topic around for sure. I still remember how 4 teams out of the 12 teams in [E.C. Jamming](http://ecjamming.tech), a Hackathon I organized with Microsoft a couple of months ago in Hong Kong, were working on chatbot projects.
+Chatbot has been a hot topic around for sure. I still remember how 4 teams out of the 12 teams in [E.C. Jamming](https://ecjamming.tech), a Hackathon I organized with Microsoft a couple of months ago in Hong Kong, were working on chatbot projects.
 
 <!-- more -->
 
@@ -43,7 +43,7 @@ In my case, I am now building a personal portfolio page for the applications for
 
 On top of the static, standard resume-alike HTML contents, I am implementing a header that interacts with users and rearranges the styles and components rendered on the page once users ask a specific question regarding my experiences — Just as if I was there, 1 on 1, with this user to answer questions like “What have you been working on at Microsoft?”.
 
-#### Read: [Build your first Slack Bot using WolframAlpha API in Python](http://eulercoder.me/2017/07/create-slack-bot-using-wolframalpha-api/)
+#### Read: [Build your first Slack Bot using WolframAlpha API in Python](https://eulercoder.me/2017/07/create-slack-bot-using-wolframalpha-api/)
 
 What’s even better is this tutorial and the so-called ChatWeb is built with a server-less architecture (thanks to [Azure Functions](https://azure.microsoft.com/en-us/services/functions/)), which means you won’t have to worry about building and maintaining a server at all. Just front-end. Just **ReactJS**.
 
@@ -134,7 +134,7 @@ I love being an application developer in the early 21st century; fresh and cool,
 
 Once it is done, go to “**Publish App**” page and you can straight up just one-click push the app to production and get an endpoint that looks like this:
 
-    <code class="language-http">https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/{app id}?subscription-key={app key}&timezoneOffset=0&verbose=true&q={user query}</code>
+    <code class="language-https">https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/{app id}?subscription-key={app key}&timezoneOffset=0&verbose=true&q={user query}</code>
 
 And bang.
 
@@ -172,7 +172,7 @@ Let me just quote this from the official site of Azure Functions — Who can pos
 
 With Azure Functions, the client-side code will be calling this Azure endpoint where it will then complete the HTTP request using API key of LUIS on Azure’s computing platform and simply return the LUIS result to the client side. Think of this like a lambda function on the Azure cloud, if you are familiar with Functional Programming.
 
-Again, if you are not familiar with this, this step is not a must to achieve a website that understands users. This is for security reason. And also, you are welcome to build this proxy with Node and Express stack and setup the API endpoint with [Digital Ocean](http://eulercoder.me/recommends/digitalocean/), [Linode](https://www.linode.com/) or [Heroku](https://www.heroku.com/). They are all nice and neat in this case.
+Again, if you are not familiar with this, this step is not a must to achieve a website that understands users. This is for security reason. And also, you are welcome to build this proxy with Node and Express stack and setup the API endpoint with [Digital Ocean](https://eulercoder.me/recommends/digitalocean/), [Linode](https://www.linode.com/) or [Heroku](https://www.heroku.com/). They are all nice and neat in this case.
 
 But if you decided to follow me on this,
 
@@ -261,7 +261,7 @@ Now I think the control of rendering can certainly be cleaner with `react-router
 
 Again, this is a concept and high-level prototype that I just can’t wait to share with the community. Especially the new (and last) semester starts this week, and I will be stuck in applications of graduate programs, GRE, and potential job searches (Yes. I am still hoping to have employers sponsoring my visa, so I don’t need OPT that desperately.)
 
-[caption id="attachment_864" align="aligncenter" width="728"]![](http://eulercoder.me/wp-content/uploads/2017/09/two-year-of-selflearning-in-article-post.jpg)](http://eulercoder.me/2017/08/2-years-of-self-learning-into-a-developer/) Two years of Self-Learning into a developer[/caption]
+[caption id="attachment_864" align="aligncenter" width="728"]![](https://eulercoder.me/wp-content/uploads/2017/09/two-year-of-selflearning-in-article-post.jpg)](https://eulercoder.me/2017/08/2-years-of-self-learning-into-a-developer/) Two years of Self-Learning into a developer[/caption]
 
 ### Finally…
 
@@ -275,7 +275,7 @@ If you do have any better UX design that can synergy with this ChatWeb concept, 
 
 ---
 
-**Have something to talk about? Want to contribute to our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute to our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Have questions? Write your comments below. 🙂
 

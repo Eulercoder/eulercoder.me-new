@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { DiscussionEmbed } from 'disqus-react'
 import styled from 'styled-components'
 import { graphql, Link } from 'gatsby'
 
@@ -281,8 +281,13 @@ const SubscribeBottom = styled(Subscribe)`
 const Blogs = ({ data, pageContext: { prev, next } }) => {
   const post = data.markdownRemark
   const { author, date, title, categories } = post.frontmatter
-  
- 
+  // const siteTitle = title
+  // const { previous, next } = pathContext
+  const disqusShortname = 'vicky002'
+  const disqusConfig = {
+    identifier: post.id,
+    title: title,
+  }
   return (
     <>
     <Layout
@@ -322,13 +327,15 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
             </Right>
           )}
         </Navigation>
-      </Container>
-      <SubscribeBottom>
+       
+        <SubscribeBottom>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input type="text" id="subscription-email" placeholder="your@email.com" />
           <button>Subscribe</button>
         </div>
       </SubscribeBottom>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      </Container>
     </Layout>
   
     </>

@@ -5,7 +5,7 @@ categories:
   - learning
   - security
 tags:
-  - http
+  - https
   - security
 author: vicky002
 comments: true
@@ -15,7 +15,7 @@ navigation: true
 cover: assets/images/cover/lock.jpg
 class: post-template
 subclass: post
-link: http://eulercoder.me/2017/07/http-headers-security-web-applications/
+link: https://eulercoder.me/2017/07/https-headers-security-web-applications/
 wordpress_id: 317
 ---
 
@@ -29,7 +29,7 @@ HSTS is a mechanism to notify the user that your domain name should only be acce
 
 `Strict-Transport-Security: max-age = 259200; includeSubDomains; preload;`
 
-So even though your user types manually `http://eulercoder.me` in the URL bar, no calls will be made HTTP. The browser will transform itself HTTP HTTPS before executing the query. Of course, it is necessary to receive at least once for the header that protection is enabled. The user is, therefore, a priori not protected at his first request, if it is performed by HTTP.
+So even though your user types manually `https://eulercoder.me` in the URL bar, no calls will be made HTTP. The browser will transform itself HTTP HTTPS before executing the query. Of course, it is necessary to receive at least once for the header that protection is enabled. The user is, therefore, a priori not protected at his first request, if it is performed by HTTP.
 
 It is nevertheless possible to overcome this limitation and also protect the first query. Browsers have a list of "hard" domain names to be accessed exclusively by https. This list is managed by the Chromium project but is also used by other browsers. You can request the addition of a domain name to this list via the form on [HSTS Preload](https://hstspreload.appspot.com/) For this to be taken into account it is also necessary to add the flag "preload" the header Strict-Transport-Security.
 
@@ -39,7 +39,7 @@ The Content-Security-Policy used to define a whitelist of origins from which you
 
 Furthermore, the CSP prohibits scripts inline by default. It becomes, for example, possible to execute a on-click directly on your HTML elements. Your entire Javascript code should be outsourced in dedicated js files (which was anyway a good practice), and imported from an origin authorized by the PUC. MSCs are of great interest from a safety point of view. To the extent you control the source of your resources and where inline scripts are not allowed, CSPs are extremely effective against XSS flaws.
 
-`Content-Security-Policy: default-src: 'none'; style-src 'self' ' http://www.example.cdn.com '; frame-src: ' http://www.youtube.com ' ; script src 'self' ' https://ssl.google-analytics.com '; img src-: 'self'; font-src: ' http://www.yourdomain.com '; connect-src: ' s elf' report-uri: https://www.yourdomain.com/report` In this example, the styles are allowed provided they are from the domain name being (self), or Cdn. We allow scripts from self and Google Analytics, the frame of Youtube, Ajax requests (connect-src) on self, etc. The report-uri option allows sending a report every time a resource is blocked. These reports allow you either to adjust your policy by allowing a resource that should not have been blocked or to detect XSS flaws on your site.
+`Content-Security-Policy: default-src: 'none'; style-src 'self' ' https://www.example.cdn.com '; frame-src: ' https://www.youtube.com ' ; script src 'self' ' https://ssl.google-analytics.com '; img src-: 'self'; font-src: ' https://www.yourdomain.com '; connect-src: ' s elf' report-uri: https://www.yourdomain.com/report` In this example, the styles are allowed provided they are from the domain name being (self), or Cdn. We allow scripts from self and Google Analytics, the frame of Youtube, Ajax requests (connect-src) on self, etc. The report-uri option allows sending a report every time a resource is blocked. These reports allow you either to adjust your policy by allowing a resource that should not have been blocked or to detect XSS flaws on your site.
 
 ### Policy applies to a wide variety of resources
 
@@ -111,7 +111,7 @@ This header is used by newer browsers and enables an automatic detection of XSS 
 
 This header is used with care, to the extent, possible false positives could be very disadvantageous to your site. It is also possible to activate a "report" that in addition to blocking the page allows you to send a report to each flaw found.
 
-`X-XSS-Protection: 1; report = http://site.com/report`
+`X-XSS-Protection: 1; report = https://site.com/report`
 
 ## Conclusion
 

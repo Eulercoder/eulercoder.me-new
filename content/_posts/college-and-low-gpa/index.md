@@ -15,7 +15,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/college.jpg
 subclass: post
-link: http://eulercoder.me/2017/08/college-low-gpa-know-everything/
+link: https://eulercoder.me/2017/08/college-low-gpa-know-everything/
 wordpress_id: 658
 ---
 
@@ -45,7 +45,7 @@ Many students ask us questions related to college and low GPA. Students with low
 
 - If you have low GPA but you have many co-curricular achievements and good projects, you can easily get shortlisted for any company. In this case, both have equal chances of getting shortlisted.
 
-* I had 2.2/5 GPA, I got the internship at Slack and then full-time offer.** Read:** [My interview experience with Slack, Mozilla, BrowserStack, LinkedIn, and Amazon](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+* I had 2.2/5 GPA, I got the internship at Slack and then full-time offer.** Read:** [My interview experience with Slack, Mozilla, BrowserStack, LinkedIn, and Amazon](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
 - Smart people can always get a good career - higher GPA not.
 
@@ -70,7 +70,7 @@ Many students ask us questions related to college and low GPA. Students with low
 
 - **Apply to small companies/Startups first: **All the big companies receive tons of resumes and they use specific tools and algorithms to filter out candidates based on keywords. Recruiting team in big MNCs don't have time to go through every single resume so it's better to apply to small companies and startups first. They get fewer applications compared to MNCs and you will have higher chances of getting noticed.
 
-* **Focus on Resume format: **Make sure your resume is free from grammar, spelling and formatting errors. **Use bullet points **and **highlight experience and achievements. **We highly recommend you to read our [Summer Internship: The Ultimate Guide](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/) for best resume tips. You can also use my resume format mention in the guide.
+* **Focus on Resume format: **Make sure your resume is free from grammar, spelling and formatting errors. **Use bullet points **and **highlight experience and achievements. **We highly recommend you to read our [Summer Internship: The Ultimate Guide](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/) for best resume tips. You can also use my resume format mention in the guide.
 
 - **Network: **Networking is extremely important in getting a good job. You have lower GPA, you may need referrals, the recruiter needs to know your skills and strength. Attend different on-campus placements sessions, go out of your way to talk to recruiters. When you and talk to engineers/recruiter, you create and control the very first impression - not your resume (your GPA).
 
@@ -84,7 +84,7 @@ Persistence and patience pay off. I was rejected from 12 companies straight befo
 
 What do you think about college and low GPA? Does it really matter? Have you secured a job/internship without mentioning your GPA on the resume? Share your experiences below in comments.
 
-**Have something to talk about? Want to contribute in our [Mission and Goal](http://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](http://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute in our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write your comments below. 🙂
 

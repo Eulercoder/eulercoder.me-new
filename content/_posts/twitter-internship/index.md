@@ -14,11 +14,11 @@ navigation: true
 class: post-template
 cover: assets/images/cover/twitter.jpg
 subclass: post
-link: http://eulercoder.me/2017/08/twitter-internship-undergrad-role-2018/
+link: https://eulercoder.me/2017/08/twitter-internship-undergrad-role-2018/
 wordpress_id: 622
 ---
 
-We just received an email yesterday about Twitter Internship 2018 Application and their undergrad roles. Twitter internship application for 2018 is now live on their career page and in this post, we will be writing about everything you need to know to spend your summer in San Francisco at Twiter HQ, also Twitter has many offices in the US, Canada, Europe and Australia. Twitter's building was right in front of my building when I was in San Francisco during [my summer internship at Slack](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/). Ok, so let's get started about the **Twitter Internship** and Undergrad application process, preparation plan and few other things that will be helpful in cracking the interview.
+We just received an email yesterday about Twitter Internship 2018 Application and their undergrad roles. Twitter internship application for 2018 is now live on their career page and in this post, we will be writing about everything you need to know to spend your summer in San Francisco at Twiter HQ, also Twitter has many offices in the US, Canada, Europe and Australia. Twitter's building was right in front of my building when I was in San Francisco during [my summer internship at Slack](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/). Ok, so let's get started about the **Twitter Internship** and Undergrad application process, preparation plan and few other things that will be helpful in cracking the interview.
 
 #
 
@@ -46,7 +46,7 @@ NOTE: Students who will apply before November 6, will receive application status
 
 We have tried to provide you everything about the Twitter internship and undergrad interview pattern, type of problems they ask. We all also know that it's not guaranteed, they will follow the same pattern every year. Let's see the pattern,
 
-So, Process starts with ![Twitter Internship Pattern](http://eulercoder.me/wp-content/uploads/2017/08/Twitter-internship-min.png)
+So, Process starts with ![Twitter Internship Pattern](https://eulercoder.me/wp-content/uploads/2017/08/Twitter-internship-min.png)
 
 - **60 Minutes - Tech Screening on [_Hackerrank_](https://www.hackerrank.com)**
 
@@ -94,7 +94,7 @@ We will be writing articles on each of these topics very soon, but you need to s
 
 ## Resume Critique
 
-We have written [Summer internship guide on our blog](http://eulercoder.me/2017/07/summer-internship-ultimate-guide/), which explains how to write and create your resume. Please read this guide once. Also, we'd love to help and critique your resume and if we find good resume, we will pass it directly to the Twitter HR people. You can mail us your resume at -[ support@eulercoder.me](mailto:support@eulercoder.me?subject=Attaching%20resume%20for%20critique%20and%20refferal&body=Hello%20Eulercoder%20Team%2C%20please%20have%20a%20look%20at%20my%20resume.%20)
+We have written [Summer internship guide on our blog](https://eulercoder.me/2017/07/summer-internship-ultimate-guide/), which explains how to write and create your resume. Please read this guide once. Also, we'd love to help and critique your resume and if we find good resume, we will pass it directly to the Twitter HR people. You can mail us your resume at -[ support@eulercoder.me](mailto:support@eulercoder.me?subject=Attaching%20resume%20for%20critique%20and%20refferal&body=Hello%20Eulercoder%20Team%2C%20please%20have%20a%20look%20at%20my%20resume.%20)
 
 **Few Books I highly recommend you to read**
 
@@ -118,9 +118,9 @@ That's it! Ask us anything, comment below your queries, suggestions or feedback 
 
 **Other Recommended articles:**
 
-- [Slack, Amazon, Mozilla, Browserstack, LinkedIn: My Internship Interview Experience](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+- [Slack, Amazon, Mozilla, Browserstack, LinkedIn: My Internship Interview Experience](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
-- [Basic skills needed prior to applying for internships ](http://eulercoder.me/2017/07/basic-skills-needed-internship/)
+- [Basic skills needed prior to applying for internships ](https://eulercoder.me/2017/07/basic-skills-needed-internship/)
 
 ##
 

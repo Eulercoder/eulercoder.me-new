@@ -13,7 +13,7 @@ navigation: true
 class: post-template
 cover: assets/images/cover/analyse.jpg
 subclass: post
-link: http://eulercoder.me/2017/07/basic-skills-needed-internship/
+link: https://eulercoder.me/2017/07/basic-skills-needed-internship/
 wordpress_id: 607
 ---
 
@@ -79,9 +79,9 @@ If you found this article useful, do share with your friends. Let's help everyon
 
 **Recommended Articles:**
 
-- [Slack, Amazon, LinkedIn, Browserstack and Mozilla - My internship interview experience](http://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
+- [Slack, Amazon, LinkedIn, Browserstack and Mozilla - My internship interview experience](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
-- [Slack, San Francisco and Silicon Valley - My Summer 2016](http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
+- [Slack, San Francisco and Silicon Valley - My Summer 2016](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
 
 ## Subscribe to our mailing list
 
@@ -89,4 +89,4 @@ If you found this article useful, do share with your friends. Let's help everyon
 
 Email Address \*
 
-[clickToTweet tweet="http://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/ " quote="Slack Internship, San Francisco, and Silicon Valley - Summer 2016" theme="style5"]
+[clickToTweet tweet="https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/ " quote="Slack Internship, San Francisco, and Silicon Valley - Summer 2016" theme="style5"]
