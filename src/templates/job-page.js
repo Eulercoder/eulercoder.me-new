@@ -5,9 +5,9 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-
+import "medium.css"
 const JobWrap = styled.div`
-
+    font-family: 'Roboto', sans-serif; 
   text-decoration: none;
   color: black;
   @media(max-width: 1000px) {
@@ -39,6 +39,7 @@ const Job = styled.div`
 ` 
 const JobSection = styled.div`
     display: flex;
+    font-family: 'Roboto', sans-serif;  
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -85,6 +86,7 @@ const Techstacks = styled.div`
 const ApplyJob = styled.a`
     text-decoration: none;
     color: white;
+    font-family: 'Roboto', sans-serif;  
     background:  rgb(102,51,153); 
     padding: 8px 50px;
     font-size: 1rem;
@@ -96,10 +98,13 @@ const ApplyJob = styled.a`
     }
 `
 const Body = styled.div`
-font-size: 0.94rem;
-font-family: 'Roboto', sans-serif;
-margin-top: 60px;
-margin-bottom: 100px;
+    font-size: 0.94rem;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    font-family: "Lora";
+    font-size: 21px;
+    letter-spacing: -0.03px;
+    line-height: 1.58;
 
 ` 
 

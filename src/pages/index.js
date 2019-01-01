@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SEO from '../components/seo'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
@@ -56,7 +55,33 @@ const NavLink = styled(Link)`
     display:none;
   }
 `
+
+const WorkWithUs = styled.a`
+  color: #fff;
+  text-decoration: none;
+  margin-right: 36px;
+  font-weight: light;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7437rem;
+  &:hover {
+    color: #fff7;
+  }
+  @media (max-width:1024px) {
+    display:none;
+  }
+`
+
 const MobileNavLink = styled(Link)`
+  display: flex;
+  color: #663399;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+`
+
+const WorkWithUsMobile = styled.a`
   display: flex;
   color: #663399;
   text-decoration: none;
@@ -127,7 +152,7 @@ const MobileNavbar = styled.div`
 
 const LandingSection = styled.div`
   display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif ;
   flex-direction: row;
   justify-content:evenly;
   @media (max-width: 1000px) {
@@ -239,8 +264,8 @@ const BlogsWrapper = styled.div`
   & ${Card} {
     max-width: 450px;
     background: white;
-    max-height: 320px;
-    height: 320px;
+    max-height: 330px;
+    height: 330px;
     cursor: pointer;
     padding: 20px;
     border-radius: 5px;
@@ -257,9 +282,15 @@ const BlogsWrapper = styled.div`
   }
 `
 
+const TitleIndex = styled(Title)`
+    display: block;
+    height: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+`
 
 const ViewAll = styled(Link)`
-  padding: 20px;
+  padding: 14px;
   color: rebeccapurple;
   text-decoration: none;
   font-weight: light;
@@ -313,12 +344,12 @@ const IndexPage = ({ data }) => (
             { name: 'contact us', link: 'contactus' },
             { name: 'about us', link: 'aboutus' },
             { name: 'jobs', link: 'jobs' },
-            { name: 'work with us', link: '/' },
           ].map((item,i) => (
             <MobileNavLink key={item.name + i } to={`/${item.link}/`}>
               {item.name.toUpperCase()}
             </MobileNavLink>
           ))}
+          <WorkWithUsMobile href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUsMobile>
     </MobileNavbar>
 
     <Container img={ProgrammingImg} >
@@ -336,7 +367,10 @@ const IndexPage = ({ data }) => (
               color: '#fff',
               textDecoration: 'none',
               fontFamily: "'Roboto', sans-serif",
+              fontSize: "1.3rem",
               padding: '0 1rem 0 0',
+              position: "relative",
+              top: 3
             }}
           >
             Eulercoder
@@ -349,19 +383,19 @@ const IndexPage = ({ data }) => (
             { name: 'contact us', link: 'contactus' },
             { name: 'about us', link: 'aboutus' },
             { name: 'jobs', link: 'jobs' },
-            { name: 'work with us', link: '/' },
           ].map(item => (
             <NavLink key={item.name} to={`/${item.link}/`}>
               {item.name.toUpperCase()}
             </NavLink>
           ))}
+          <WorkWithUs href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUs>
         </NavBar>
       </div>
      <LandingSection>
-      <div style={{ padding: '10vh 0 0 0', zIndex:2 }}>
-        <h1 style={{fontSize:"56px"}}>Hello!</h1>
-        <p style={{fontSize:30, lineHeight: 1.3}}>Welcome to all new Eulercoder.</p>
-        <p style={{fontSize:18}}>We are opening our platform for developers and companies,<br></br>
+      <div style={{ padding: '10vh 0 0 0', zIndex:2, fontFamily:"'Roboto', sans-serif" }}>
+        <h1 style={{fontSize:"56px" , fontFamily:"'Roboto', sans-serif", color:"white",}}>Hello!</h1>
+        <p style={{fontSize:30, fontFamily:"'Roboto', sans-serif", lineHeight: 1.3, color:"white",}}>Welcome to all new Eulercoder.</p>
+        <p style={{fontSize:18, fontFamily:"'Roboto', sans-serif", color:"white",}}>We are opening our platform for developers and companies,<br></br>
         now everyone can write blog posts, post jobs <br></br>and showcase your projects.</p>
       </div>
       <LandingImage>
@@ -400,7 +434,7 @@ const IndexPage = ({ data }) => (
             },
           }) => (
             <Card key={"blogswrap"+title} as={Link} to={slug}>
-              <Title>{title.substring(0,76)}{title.length>75 && <span style={{color:"#ccc"}}>...</span>}</Title>
+              <TitleIndex>{title.substring(0,76)}{title.length>75 && <span style={{color:"#ccc"}}>...</span>}</TitleIndex>
               <Body>{excerpt}</Body>
               <Date>
                 <Author>

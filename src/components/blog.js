@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-
+import 'medium.css'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -28,12 +28,9 @@ const Container = styled.div`
   }
   
 `
-export const Title = styled.h2`
+export const Title = styled.h3`
   margin-top: 1.6rem;
   margin-bottom: 1.05rem;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: -0.0075em;
-  font-size: 1.51572rem;
 `
 export const Date = styled.div`
   color: hsla(270, 6.8076334240000005%, 0%, 0.54);
@@ -42,7 +39,6 @@ export const Date = styled.div`
 `
 export const Body = styled.div`
   font-size: 0.94rem;
-  font-family: 'Roboto', sans-serif;
   margin-bottom: 0.6rem;
   font-weight: normal;
 `

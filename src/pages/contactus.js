@@ -9,6 +9,9 @@ import { ReactComponent as Facebook } from '../icons/facebook.svg'
 
 const Top = styled.div`
     text-align:center; 
+    & h1 {
+        text-align: center;
+    }
 `
 
 const Form = styled.form`

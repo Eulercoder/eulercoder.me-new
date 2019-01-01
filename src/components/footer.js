@@ -104,6 +104,7 @@ const Terms = styled.div`
 
 const TermsLink = styled(Link)`
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   margin-right: 10px;
   cursor: pointer;
   color: #cccccc;

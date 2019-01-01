@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const Body = styled.div`
-    
+    margin: 5%;
     font-size: 0.94rem;
     font-family: 'Roboto', sans-serif;
     & a {

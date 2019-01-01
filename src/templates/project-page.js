@@ -55,8 +55,8 @@ const Body = styled.div`
   margin-bottom: 0.6rem;
   font-weight: normal;
   text-align: justify;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 4px;
+  margin-right: 4px;
 `
 
 const Buttons = styled.div`

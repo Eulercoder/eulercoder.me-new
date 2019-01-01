@@ -24,6 +24,21 @@ const NavLink = styled(Link)`
     border-bottom: 4px solid #ba8de6;
   }
 `
+const WorkWithUs = styled.a`
+  color: #666;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 20px 5px;
+  font-weight: light;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7937rem;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease-in;
+  &:hover {
+    border-bottom: 4px solid #ba8de6;
+  }   
+`
+
 const MobileNavLink = styled(Link)`
   display: flex;
   color: #663399;
@@ -32,6 +47,16 @@ const MobileNavLink = styled(Link)`
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+`
+
+const WorkWithUsMobile = styled.a`
+display: flex;
+color: #663399;
+text-decoration: none;
+font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+font-weight: bold;
+font-size: 2rem;
+text-align: center;
 `
 
 const MenuIcon= styled.div`
@@ -93,7 +118,7 @@ const MobileNavbar = styled.div`
     display:none;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }, location ) => (
   <>
   <div
     style={{
@@ -120,6 +145,8 @@ const Header = ({ siteTitle }) => (
             color: 'rebeccapurple',
             textDecoration: 'none',
             padding: '1rem',
+            fontFamily: "'Roboto', sans-serif",
+            fontSize: "1.3rem",
           }}
         >
           {siteTitle}
@@ -132,7 +159,6 @@ const Header = ({ siteTitle }) => (
           { name: 'contact us', link: '/contactus'},
           { name: 'about us', link: '/aboutus'},
           { name: 'jobs', link: '/jobs'},
-          { name: 'work with us', link: '/' },
         ].map(item => (
           <NavLink
             key={item.name}
@@ -146,6 +172,7 @@ const Header = ({ siteTitle }) => (
             {item.name.toUpperCase()}
           </NavLink>
         ))}
+      <WorkWithUs href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUs>
       </NavBar>
     </div>
   </div>
@@ -164,12 +191,12 @@ const Header = ({ siteTitle }) => (
           { name: 'contact us', link: 'contactus' },
           { name: 'about us', link: 'aboutus' },
           { name: 'jobs', link: 'jobs' },
-          { name: 'work with us', link: '/' },
         ].map(item => (
           <MobileNavLink key={item.name} to={`/${item.link}/`}>
             {item.name.toUpperCase()}
           </MobileNavLink>
         ))}
+        <WorkWithUsMobile href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUsMobile>
   </MobileNavbar>
   </>
 )

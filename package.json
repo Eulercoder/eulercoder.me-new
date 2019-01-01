@@ -19,6 +19,7 @@
     "gatsby-transformer-remark": "^2.1.15",
     "gatsby-transformer-sharp": "^2.1.8",
     "gatsby-transformer-yaml": "^2.1.6",
+    "medium.css": "^1.0.2",
     "query-string": "^5.1.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

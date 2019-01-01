@@ -7,8 +7,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const JobWrap = styled(Link)`
-  font-size: 0.94rem;
-  font-family: 'Roboto', sans-serif;  
+  font-size: 0.94rem;  
   text-decoration: none;
   color: black;
   @media(max-width: 1000px) {

@@ -2,6 +2,7 @@ import React from 'react'
 import { DiscussionEmbed } from 'disqus-react'
 import styled from 'styled-components'
 import { graphql, Link } from 'gatsby'
+import 'medium.css'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -15,8 +16,6 @@ const Container = styled.div`
 `
 
 const Category = styled.div`
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: -0.0075em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -45,21 +44,14 @@ const Categories = styled(Link)`
 const Title = styled.h2`
   margin-top: 1.6rem;
   margin-bottom: 1.05rem;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: -0.0075em;
-  font-size: 1.51572rem;
 `
 const Date = styled.div`
   color: hsla(270, 6.8076334240000005%, 0%, 0.54);
-  font-size: 0.94rem;
   margin-bottom: 2.1rem;
   align-self: center;
 `
 const Body = styled.div`
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
   
-  font-weight: normal;
   & a {
     color: rebeccapurple;
     text-decoration: none;
@@ -90,7 +82,7 @@ const Navigation = styled.div`
 `
 
 const StyledNext = styled(Link)`
-  font-family: 'Roboto', sans-serif;
+  
   text-decoration: none;
   & h4 {
     color: black;
@@ -105,7 +97,7 @@ const StyledNext = styled(Link)`
   & p {
     margin: 0;
     font-size: 0.9rem;
-    font-family: 'Roboto', sans-serif;
+    
     color: hsla(270, 6.8076334240000005%, 0%, 0.54);
   }
 `
