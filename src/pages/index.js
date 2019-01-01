@@ -263,7 +263,7 @@ const BlogsWrapper = styled.div`
 
   & ${Card} {
     max-width: 450px;
-    background: white;
+    background: #DCDCDC;
     max-height: 330px;
     height: 330px;
     cursor: pointer;
@@ -312,16 +312,16 @@ const ViewAll = styled(Link)`
 
 const CardInfo = [
                   {
-                    title:"Card One",
-                    description:"This is card 1"
+                    title:"Write Posts",
+                    description:"Submit your post as a pull request and it will be live in a few minutes."
                   },
                   {
-                    title:"Card two",
-                    description:"Description 2"
+                    title:"Show your projects",
+                    description:"Have you built something interesting? Submit your project and we will help you in promoting it."
                   },
                   {
-                    title:"Card 3",
-                    description:"This is card 3"
+                    title:"Internships and Jobs",
+                    description:"Apply to latest internships and undergrad job openings with a click of a button."
                   },
                 ]
 
@@ -350,6 +350,8 @@ const IndexPage = ({ data }) => (
             </MobileNavLink>
           ))}
           <WorkWithUsMobile href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUsMobile>
+          <WorkWithUsMobile href="https://github.com/Eulercoder/eulercoder.me-new" target="_blank" rel="noopener noreferrer">CONTRIBUTE</WorkWithUsMobile>
+
     </MobileNavbar>
 
     <Container img={ProgrammingImg} >
@@ -389,6 +391,7 @@ const IndexPage = ({ data }) => (
             </NavLink>
           ))}
           <WorkWithUs href="https://goo.gl/forms/p7mPxLrJLm8cuRfa2" target="_blank" rel="noopener noreferrer">WORK WITH US</WorkWithUs>
+          <WorkWithUs href="https://github.com/Eulercoder/eulercoder.me-new" target="_blank" rel="noopener noreferrer">CONTRIBUTE</WorkWithUs>
         </NavBar>
       </div>
      <LandingSection>
@@ -399,7 +402,7 @@ const IndexPage = ({ data }) => (
         now everyone can write blog posts, post jobs <br></br>and showcase your projects.</p>
       </div>
       <LandingImage>
-        
+
       </LandingImage>
      </LandingSection>
     </Container>
