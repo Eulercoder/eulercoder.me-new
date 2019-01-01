@@ -120,9 +120,9 @@ const TermsLink = styled(Link)`
             <h4>{'Eulercoder Newsletter'.toUpperCase()}</h4>
             <h3>Subscribe for all the latest posts</h3>
           </div>
-          <form action="" method="post">
+          <form action="https://eulercoder.us3.list-manage.com/subscribe/post?u=4dcb96f48ac8cb31e6ad01138&amp;id=ba0a5febe9" method="post">
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input type="email" name="email" id="subscription-email" placeholder="your@email.com" spellcheck="false" required/>
+            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your@email.com" spellcheck="false" required/>
             <button type="submit">Subscribe</button>
           </div>
           </form>

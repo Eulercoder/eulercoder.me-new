@@ -42,8 +42,7 @@ const Categories = styled(Link)`
 `
 
 const Title = styled.h2`
-  margin-top: 1.6rem;
-  margin-bottom: 1.05rem;
+   font-size: 42px !important;
 `
 const Date = styled.div`
   color: hsla(270, 6.8076334240000005%, 0%, 0.54);
@@ -327,9 +326,9 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
         <Title>{title}</Title>
         <Body dangerouslySetInnerHTML={{ __html: post.html }} />
         <SubscribeBottom>
-        <form action="" method="post">
+        <form action="https://eulercoder.us3.list-manage.com/subscribe/post?u=4dcb96f48ac8cb31e6ad01138&amp;id=ba0a5febe9" method="post">
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input type="email" name="email" id="subscription-email" placeholder="your@email.com" spellcheck="false" required/>
+            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your@email.com" spellcheck="false" required/>
             <button type="submit">Subscribe</button>
           </div>
           </form>
