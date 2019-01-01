@@ -1,11 +1,46 @@
 import React from 'react'
-
+import queryString from 'query-string'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Blog from '../components/blog'
 import { graphql } from 'gatsby'
 
-const Blogs = ({ data }) => (
+const Blogs = ({ data ,location }) => {
+  const categoryType = queryString.parse(location.search).category;
+  if(categoryType){
+    return (
+      <Layout background="#fbfafc">
+      <SEO title="Blogs" />
+      <div
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      >
+        {data.allMarkdownRemark.edges.map(({ node }) => 
+          {
+            
+            if(node.frontmatter.categories && node.frontmatter.categories.toString().includes(`${categoryType}`))
+            { 
+              
+          return(
+          <Blog
+            key={node.fields.slug}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+            link={node.fields.slug}
+            authorLink={node.frontmatter.author.fields.slug}
+            author={node.frontmatter.author.id}
+          />
+          );
+          } else return <div></div>;
+           
+        }
+        )}
+      </div>
+    </Layout>
+    );
+  } 
+  else
+  return(
   <Layout background="#fbfafc">
     <SEO title="Blogs" />
     <div
@@ -23,8 +58,8 @@ const Blogs = ({ data }) => (
         />
       ))}
     </div>
-  </Layout>
-)
+  </Layout>);
+}
 
 export const query = graphql`
   query {
@@ -37,6 +72,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            categories
             date(formatString: "DD MMMM, YYYY")
             author {
               fields {

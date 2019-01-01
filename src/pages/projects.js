@@ -35,7 +35,7 @@ const Project = styled.div`
     align-items: flex-start;
   }
   & a {
-    z-index: 1000;
+    z-index: 10;
   }
   & svg:hover {
     fill: rgba(140, 101, 179);
