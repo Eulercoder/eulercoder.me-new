@@ -128,8 +128,8 @@ const TermsLink = styled(Link)`
           </form>
         </Subscribe>
         <Terms>
-        <TermsLink>Terms & Conditions</TermsLink>
-        <TermsLink>Privacy Policy</TermsLink>
+        <TermsLink to="/terms-of-service">Terms of Service</TermsLink>
+        <TermsLink to="/privacy-policy">Privacy Policy</TermsLink>
         </Terms>
         </Foot>
 )

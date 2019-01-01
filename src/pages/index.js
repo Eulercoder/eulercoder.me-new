@@ -341,9 +341,9 @@ const IndexPage = ({ data }) => (
           {[
             { name: 'blogs', link: 'blogs' },
             { name: 'projects', link: 'projects' },
-            { name: 'contact us', link: 'contactus' },
             { name: 'about us', link: 'aboutus' },
             { name: 'jobs', link: 'jobs' },
+            { name: 'contact us', link: 'contactus' },
           ].map((item,i) => (
             <MobileNavLink key={item.name + i } to={`/${item.link}/`}>
               {item.name.toUpperCase()}
@@ -380,9 +380,9 @@ const IndexPage = ({ data }) => (
           {[
             { name: 'blogs', link: 'blogs' },
             { name: 'projects', link: 'projects' },
-            { name: 'contact us', link: 'contactus' },
             { name: 'about us', link: 'aboutus' },
             { name: 'jobs', link: 'jobs' },
+            { name: 'contact us', link: 'contactus' },
           ].map(item => (
             <NavLink key={item.name} to={`/${item.link}/`}>
               {item.name.toUpperCase()}
