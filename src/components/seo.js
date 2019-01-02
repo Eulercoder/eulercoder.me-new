@@ -18,7 +18,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-     
+            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            defaultTitle={title + " | " + `${data.site.siteMetadata.title}`}
             meta={[
               {
                 name: 'description',
@@ -62,9 +63,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          >
-          <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
-          </Helmet>
+          />
         )
       }}
     />
