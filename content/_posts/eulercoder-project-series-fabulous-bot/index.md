@@ -182,4 +182,4 @@ Thank you!
 
 ---
 
-**Have something to talk about? Want to contribute to our **[**Mission and Goal**](https://eulercoder.me/about)**? Write on Eulercoder. Write an **[**email to us**](mailto:hi@eulercoder.me)** or **[**contact us**](https://eulercoder.me/contact)** for guest posts.**
+**Have something to talk about? Want to contribute to our **[**Mission and Goal**](https://eulercoder.me/about)**? Write on Eulercoder. Write an **[**email to us**](mailto:hello@eulercoder.com)** or **[**contact us**](https://eulercoder.me/contact)** for guest posts.**

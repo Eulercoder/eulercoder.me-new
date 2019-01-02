@@ -68,4 +68,4 @@ This section is more of just a brainstorm/dump of different ways I can code each
 
 That's all!
 
-If you're interested in reading my posts, you can [leave your email here](https://eepurl.com/bIgxHz) (expect one email in a week :)).
+

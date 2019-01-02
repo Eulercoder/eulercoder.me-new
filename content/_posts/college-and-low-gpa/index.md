@@ -84,14 +84,8 @@ Persistence and patience pay off. I was rejected from 12 companies straight befo
 
 What do you think about college and low GPA? Does it really matter? Have you secured a job/internship without mentioning your GPA on the resume? Share your experiences below in comments.
 
-**Have something to talk about? Want to contribute in our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hi@eulercoder.me) or [contact us](https://eulercoder.me/contact) for guest posts. **
+**Have something to talk about? Want to contribute in our [Mission and Goal](https://eulercoder.me/about)? Write on Eulercoder. Write an [email to us](mailto:hello@eulercoder.com) or [contact us](https://eulercoder.me/contact) for guest posts. **
 
 Did you found this article useful? Write your comments below. 🙂
 
-If you found this article useful, do share with your friends. Let’s help everyone in getting a better internship, job and help them in learning programming. Subscribe to our newsletter and get weekly curated content directly in your mail box. Also, we have our own group on FB, we take Q&A, post materials in the group. I’ll highly recommend you to [join our FB Group.](https://www.facebook.com/groups/eulercoder)
 
-## Subscribe to our mailing list
-
-- indicates required
-
-Email Address \*

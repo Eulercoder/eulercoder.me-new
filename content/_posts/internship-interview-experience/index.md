@@ -158,9 +158,3 @@ Also, **Read this** [guide on summer internship recommended by over 1000+ studen
 Friends, if you liked this article and found it useful, please share it with your friends. Let's help everyone in getting a bettern internship and job. Also if anything is not clear and you want more in-depth information about something, please join our community - [Computer Science students group ](https://www.facebook.com/groups/eulercoder/)on Fb. There will be open discussion everyday at 9 PM and there are many other people to help and guide.
 
 Also, subscribe to our mailing list for weekly mails with top articles, directly in your mailbox. Write your comments below if anything you want me
-
-## Subscribe to our mailing list
-
-- indicates required
-
-Email Address \*

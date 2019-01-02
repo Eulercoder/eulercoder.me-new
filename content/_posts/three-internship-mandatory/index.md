@@ -79,10 +79,3 @@ Thank you!
 ---
 
 Eulercoder is a platform for everything related to computer science. We weekly send emails with our top articles directly in the mailbox. Subscribe to Eulercoder to get latest updates in engineering and computer science. Lastly, we have a closed [group on Facebook](https://www.facebook.com/groups/eulercoder), join in to discuss issues, queries, tutorials, anything related to CS.
-
-## Subscribe to our mailing list
-
-- indicates required
-
-
-    Email Address  *
