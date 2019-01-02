@@ -4,7 +4,7 @@ import appletouchicon from "./icons/eulercoder-favicon/apple-touch-icon.png"
 import favicon32 from "./icons/eulercoder-favicon/favicon-32x32.png"
 import favicon16 from "./icons/eulercoder-favicon/favicon-16x16.png"
 import safarisvg from "./icons/eulercoder-favicon/safari-pinned-tab.svg"
-import {titles} from "./components/seo"
+
 
 export default class HTML extends React.Component {
   render() {
@@ -26,8 +26,9 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title> {this.props.siteTitleEulercoder} </title>
+          <title> {this.props.defaultTitle} </title>
           {this.props.headComponents}
+          <title> {this.props.defaultTitle} </title>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
