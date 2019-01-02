@@ -16,8 +16,11 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-            defaultTitle = {`${title ? title : "Eulercoder"} | Eulercoder`}
-            title={`${title} | Eulercoder`}
+            
+            title={title}
+            titleTemplate = {`%s | Eulercoder`}
+            titleAttributes = {"data-react-helmet:true"}
+
             meta={[
               {
                 name: 'description',
