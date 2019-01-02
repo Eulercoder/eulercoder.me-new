@@ -63,7 +63,9 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+          <title>{`${title} | Eulercoder`}</title>
+          </Helmet>
         )
       }}
     />
