@@ -83,10 +83,3 @@ If you found this article useful, do share with your friends. Let's help everyon
 
 - [Slack, San Francisco and Silicon Valley - My Summer 2016](https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/)
 
-## Subscribe to our mailing list
-
-- indicates required
-
-Email Address \*
-
-[clickToTweet tweet="https://eulercoder.me/2017/07/slack-internship-sf-silicon-valley/ " quote="Slack Internship, San Francisco, and Silicon Valley - Summer 2016" theme="style5"]

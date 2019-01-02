@@ -121,13 +121,3 @@ That's it! Ask us anything, comment below your queries, suggestions or feedback 
 - [Slack, Amazon, Mozilla, Browserstack, LinkedIn: My Internship Interview Experience](https://eulercoder.me/2017/07/slack-amazon-mozilla-linkedin-interview/)
 
 - [Basic skills needed prior to applying for internships ](https://eulercoder.me/2017/07/basic-skills-needed-internship/)
-
-##
-
-##
-
-Subscribe to our mailing list
-
-- indicates required
-
-Email Address \*
