@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: 'og:title',
-                content: title,
+                content: `${title}`,
               },
               {
                 property: 'og:description',
@@ -49,7 +49,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'twitter:title',
-                content: title,
+                content: `${title}`,
               },
               {
                 name: 'twitter:description',
@@ -66,7 +66,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           >
-          <title>{title}</title>
+          <title>{`${title}`}</title>
           </Helmet>
         )
       }}
