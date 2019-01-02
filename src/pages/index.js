@@ -2,7 +2,7 @@ import React from 'react'
 import SEO from '../components/seo'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+//import Img from 'gatsby-image'
 import ProgrammingImg from '../images/ProgrammingBoy.svg'
 import Footer from '../components/footer'
 import { Title, Date, Author, Body } from '../components/blog'
@@ -168,7 +168,7 @@ const Information = styled.div`
   background: white;
   color: black;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px ;
   align-items: center;
   grid-gap: 28px;
   padding: 10vh 20px;
@@ -224,21 +224,26 @@ const Card = styled.div`
 `
 
 const InfoContainer = styled.div`
-  background: #0003;
+  background: #fff;
   height: 100%;
   width: 100%;
   padding: 20px;
+  color: #663399;
+  & p {
+  font-family: Lora;
+ 
+  }
 `
 
-const StyledImg = styled(Img)`
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -10;
-
-`
+//const StyledImg = styled(Img)`
+//  overflow: hidden;
+//  height: 100%;
+//  width: 100%;
+//  top: 0;
+//  left: 0;
+//  z-index: -10;
+//
+//`
 
 const BlogsInfo = styled.div`
   background: #fbfafc;
@@ -408,13 +413,14 @@ const IndexPage = ({ data }) => (
     </Container>
 
     <Information>
+      <h1 style={{color:"#663399"}}>How you can use Eulercoder</h1>
       {data.allFile.edges.map(({ node: { childImageSharp: { fluid } } }, i) => (
         <Card key={"cards" + i} className="cards">
           <InfoContainer>
-            <h2>{`${CardInfo[i].title}`}</h2>
-            <h4>{`${CardInfo[i].description}`}</h4>
+            <h3>{`${CardInfo[i].title}`}</h3>
+            <p>{`${CardInfo[i].description}`}</p>
           </InfoContainer>
-          <StyledImg fluid={fluid} style={{ position: 'absolute' }} />
+          
         </Card>
       ))}
     </Information>
