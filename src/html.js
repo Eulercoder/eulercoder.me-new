@@ -7,11 +7,11 @@ import safarisvg from "./icons/eulercoder-favicon/safari-pinned-tab.svg"
 
 
 export default class HTML extends React.Component {
-  componentDidUpdate(){
-    document.title = this.props.defaultTitle;
-  }
-  render() {
 
+   siteTitle= "Eulercoder"
+ 
+  render() {
+    this.siteTitle= this.props.defaultTitle;
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -31,7 +31,6 @@ export default class HTML extends React.Component {
           />
           <title> {this.props.defaultTitle} </title>
           {this.props.headComponents}
-          <title> {this.props.defaultTitle} </title>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -48,6 +47,8 @@ export default class HTML extends React.Component {
           
           document.body.addEventListener('DOMSubtreeModified', removeLoadingStaticQuery);  
           function removeLoadingStaticQuery() {
+          document.title = "${this.props.defaultTitle ? this.props.defaultTitle :'Eulercoder'}";
+          console.log("${this.props.defaultTitle}");   
           var x = document.getElementsByTagName('div');
           for(var i=0;i<x.length;i++) {
             if(x[i].innerHTML === "Loading (StaticQuery)") {
@@ -69,5 +70,6 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
+  defaultTitle: PropTypes.string,
   postBodyComponents: PropTypes.array,
 }

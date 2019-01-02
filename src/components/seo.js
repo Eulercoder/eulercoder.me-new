@@ -16,7 +16,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-            defaultTitle = {`${title} | Eulercoder`}
+            defaultTitle = {`${title ? title : "Eulercoder"} | Eulercoder`}
+            title={`${title} | Eulercoder`}
             meta={[
               {
                 name: 'description',
