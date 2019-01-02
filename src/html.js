@@ -7,6 +7,9 @@ import safarisvg from "./icons/eulercoder-favicon/safari-pinned-tab.svg"
 
 
 export default class HTML extends React.Component {
+  componentDidUpdate(){
+    document.title = this.props.defaultTitle;
+  }
   render() {
 
     return (
