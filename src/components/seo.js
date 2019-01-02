@@ -18,8 +18,10 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-            titleTemplate={`%s | Eulercoder`}
-            defaultTitle={title + " | " + "Eulercoder"}
+            title= {title}
+            titleTemplate={`${data.site.siteMetadata.titleTemplate}`}
+            
+            
             meta={[
               {
                 name: 'description',
@@ -63,9 +65,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          >
-          <title>{`${title} | Eulercoder`}</title>
-          </Helmet>
+          />
         )
       }}
     />
@@ -93,6 +93,7 @@ export const detailsQuery = graphql`
     site {
       siteMetadata {
         title
+        titleTemplate
         description
         author
       }

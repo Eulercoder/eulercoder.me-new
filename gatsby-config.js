@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Eulercoder',
+    titleTemplate: '%s | Eulercoder',
     description:
       'A website for tech blogs, projects, jobs and much more.',
     author: 'Eulercoder',
