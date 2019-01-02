@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               lang,
             }}
           
-            titleTemplate={`${data.site.siteMetadata.titleTemplate}`}
+            title={title}
             
             
             meta={[
@@ -66,7 +66,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           >
-          <title>{`${title}`}</title>
+          <title data-react-helmet={true} children={title} >{`${title} | Eulercoder`}</title>
           </Helmet>
         )
       }}

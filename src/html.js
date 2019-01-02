@@ -7,6 +7,7 @@ import safarisvg from "./icons/eulercoder-favicon/safari-pinned-tab.svg"
 
 export default class HTML extends React.Component {
   render() {
+    console.log("this" + JSON.stringify(this.props.headComponents));
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -17,7 +18,7 @@ export default class HTML extends React.Component {
         <link rel="icon" type="image/png" sizes="16x16" href={`${favicon16}`} />
         <link rel="mask-icon" href={`${safarisvg}`} color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#663399"></meta>
+        <meta name="theme-color" content="#663399"/>
          
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
