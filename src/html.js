@@ -4,6 +4,7 @@ import appletouchicon from "./icons/eulercoder-favicon/apple-touch-icon.png"
 import favicon32 from "./icons/eulercoder-favicon/favicon-32x32.png"
 import favicon16 from "./icons/eulercoder-favicon/favicon-16x16.png"
 import safarisvg from "./icons/eulercoder-favicon/safari-pinned-tab.svg"
+import {titles} from "./components/seo"
 
 export default class HTML extends React.Component {
   render() {
@@ -39,6 +40,7 @@ export default class HTML extends React.Component {
         <script
         dangerouslySetInnerHTML={{
           __html:`
+          
           document.body.addEventListener('DOMSubtreeModified', removeLoadingStaticQuery);  
           function removeLoadingStaticQuery() {
           var x = document.getElementsByTagName('div');
@@ -47,6 +49,7 @@ export default class HTML extends React.Component {
               x[i].style.display="none";
               }
             }
+            document.title = "${titles}";
           }
           `,
         }}

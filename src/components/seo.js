@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+export let titles = "Eulercoder";
 
 function SEO({ description, lang, meta, keywords, title }) {
   
-
+  titles = title;
   return (
     <StaticQuery
       query={detailsQuery}
