@@ -3,6 +3,7 @@ import SEO from '../components/seo'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
 //import Img from 'gatsby-image'
+import Helmet from "react-helmet"
 import ProgrammingImg from '../images/ProgrammingBoy.svg'
 import Footer from '../components/footer'
 import { Title, Date, Author, Body } from '../components/blog'
@@ -333,6 +334,7 @@ const CardInfo = [
 
 const IndexPage = ({ data }) => (
   <>
+  <Helmet title="Home | Eulercoder"/>
     <SEO title="Home" keywords={['gatsby', 'application', 'react', 'blogs']} />
     <CheckBoxMenu type="checkbox" id="showmenu" style={{display:"none"}} className="showmenu"/>
      <Label for="showmenu" className="menulabel">

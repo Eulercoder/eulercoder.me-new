@@ -164,7 +164,7 @@ export default class JobsPage extends Component {
 
     const {data} = this.props; 
     return(
-    <Layout style={{ maxWidth: 1300, width: '100%' }}>
+    <Layout style={{ maxWidth: 1300, width: '100%' }} title="Jobs">
     <SEO title="JOBS" />
     <Form onSubmit={(e)=>this.handleSubmit(e)}
     
