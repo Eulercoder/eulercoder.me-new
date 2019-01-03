@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const PrivacyPolicy = ()=>(
-    <Layout>
+    <Layout title="Privacy Policy">
     <SEO title="Privacy Policy"/>
 <h2>Privacy Policy</h2>
 <p>Your privacy is important to us. It is Eulercoder Technologies LLP's policy to respect your privacy regarding any information we may collect from you across our website, <a href="https://eulercoder.me">https://eulercoder.me</a>, and other sites we own and operate.</p>

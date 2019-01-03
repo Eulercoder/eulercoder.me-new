@@ -9,7 +9,7 @@ const Terms = styled.div`
 `
 
 const TermsofService = ()=>(
-    <Layout>
+    <Layout  title="Terms of Service">
         <SEO title="Terms of Service"/>
 <Terms>
     <h1>Eulercoder Technologies LLP Terms of Service</h1>
