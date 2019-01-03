@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 function SEO({ description, lang, meta, keywords, title }) {
  // Helmet.canUseDOM = false;
   const helmet = Helmet.peek();
-  helmet.title = `${title}`;
+  helmet ?  helmet.title = `${title}` : true;
   console.log("rewind "+JSON.stringify(helmet));
   return (
     <StaticQuery
