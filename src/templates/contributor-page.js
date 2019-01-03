@@ -61,7 +61,7 @@ const Author = styled.div`
 const ContributorPage = ({ data }) => {
   const author = data.authorYaml
   return (
-    <Layout>
+    <Layout title="Contributor">
       <SEO title="Contributor" keywords={['gatsby', 'application', 'react']} />
       <Author>
         <Img fixed={author.avatar.childImageSharp.fixed} />

@@ -18,7 +18,7 @@ const Body = styled.div`
 `
 
 const AboutUs = ()=>(
-    <Layout >
+    <Layout title="About Eulercoder">
         <SEO title="About Eulercoder"/>
         <Body>
         <h1>About Us</h1>

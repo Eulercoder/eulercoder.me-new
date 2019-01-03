@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Eulercoder',
+    titleTemplate: '%s | Eulercoder',
     description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+      'A website for tech blogs, projects, jobs and much more.',
+    author: 'Eulercoder',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': `AuthorYaml`,

@@ -9,7 +9,7 @@ const Blogs = ({ data ,location }) => {
   const categoryType = queryString.parse(location.search).category;
   if(categoryType){
     return (
-      <Layout background="#fbfafc">
+      <Layout title="Blogs" background="#fbfafc">
       <SEO title="Blogs" />
       <div
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
@@ -41,7 +41,7 @@ const Blogs = ({ data ,location }) => {
   } 
   else
   return(
-  <Layout background="#fbfafc">
+  <Layout title="Blogs" background="#fbfafc">
     <SEO title="Blogs" />
     <div
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}

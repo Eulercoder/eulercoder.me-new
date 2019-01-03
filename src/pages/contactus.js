@@ -94,7 +94,7 @@ const Socialize = styled.div`
 const ContactUs = ()=> {
    
    return( 
-    <Layout>
+    <Layout title="Contact Us">
     <SEO title="Contact Us" />
     <Top>
     <Socialize>  

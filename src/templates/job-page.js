@@ -123,7 +123,7 @@ const JobPage = ({data})=> {
     } = jobdata.frontmatter;
     
     return(
-    <Layout  style={{ maxWidth: 1200, width: '80%' }}>
+    <Layout title={job}  style={{ maxWidth: 1200, width: '80%' }}>
     <SEO title={job} /> 
     
     <Job>

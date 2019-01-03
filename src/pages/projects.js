@@ -65,7 +65,7 @@ const StyledLink = styled(Link)`
 `
 
 const ProjectPage = ({ data }) => (
-  <Layout style={{ maxWidth: 1200, width: '80%' }}>
+  <Layout style={{ maxWidth: 1200, width: '80%' }} title="Projects">
     <SEO title="Projects" />
     <Grid>
       {data.allMarkdownRemark.edges.map(

@@ -314,6 +314,7 @@ const Blogs = ({ data, pageContext: { prev, next } }) => {
         flexDirection: 'column',
         alignItems: 'center',
       }}
+      title={title}
     >
       <SEO title={title} />
       <Container>
