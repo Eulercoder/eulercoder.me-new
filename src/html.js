@@ -16,21 +16,19 @@ export default class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
-          <meta charSet="utf-8" />
-          
-        <link rel="apple-touch-icon" sizes="180x180" href={`${appletouchicon}`} />
-        <link rel="icon" type="image/png" sizes="32x32" href={`${favicon32}`} />
-        <link rel="icon" type="image/png" sizes="16x16" href={`${favicon16}`} />
-        <link rel="mask-icon" href={`${safarisvg}`} color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#663399"/>
-         
+          <meta charSet="utf-8" />       
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
+        <link rel="apple-touch-icon" sizes="180x180" href={`${appletouchicon}`} />
+        <link rel="icon" type="image/png" sizes="32x32" href={`${favicon32}`} />
+        <link rel="icon" type="image/png" sizes="16x16" href={`${favicon16}`} />
+        <link rel="mask-icon" href={`${safarisvg}`} color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#663399"/>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -68,6 +66,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  defaultTitle: PropTypes.string,
   postBodyComponents: PropTypes.array,
 }

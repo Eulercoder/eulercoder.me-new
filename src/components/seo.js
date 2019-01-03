@@ -13,14 +13,14 @@ function SEO({ description, lang, meta, keywords, title }) {
           description || data.site.siteMetadata.description
         return (
           <Helmet
+          defaultTitle={`${title} | ${data.site.siteMetadata.title}`}
+          titleTemplate = {`%s | ${data.site.siteMetadata.title}`}
+
             htmlAttributes={{
               lang,
             }}
             
-            title={title}
-            titleTemplate = {`%s | Eulercoder`}
-            titleAttributes = {"data-react-helmet:true"}
-
+           
             meta={[
               {
                 name: 'description',
@@ -83,7 +83,7 @@ SEO.propTypes = {
 export default SEO
 
 export const detailsQuery = graphql`
-  query DefaultSEOQuery {
+  query SEO {
     site {
       siteMetadata {
         title
