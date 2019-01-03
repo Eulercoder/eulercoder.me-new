@@ -231,6 +231,7 @@ const Project = ({ data, pageContext: { prev, next } }) => {
         alignItems: 'center',
         width: '80vw',
       }}
+      title={title}
     >
       <SEO title={title} />
       <Container>
