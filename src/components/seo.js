@@ -4,8 +4,10 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, keywords, title }) {
-  const helmet = Helmet.peek();
-  console.log("peek "+JSON.stringify(helmet));
+  Helmet.canUseDOM = false;
+  const helmet = Helmet.renderStatic();
+  helmet.title = `${title}`;
+  console.log("rewind "+JSON.stringify(helmet));
   return (
     <StaticQuery
       query={detailsQuery}
@@ -14,7 +16,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           description || data.site.siteMetadata.description
         return (
           <Helmet
-          title={`${title} | ${data.site.siteMetadata.title}`}
+          defaultTitle={title}
           titleTemplate = {`%s | ${data.site.siteMetadata.title}`}
           
             htmlAttributes={{
@@ -60,7 +62,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           >
-          {<title>{title}</title>}
+          <title>{title}</title>
           </Helmet>
         )
       }}

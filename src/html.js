@@ -29,6 +29,7 @@ export default class HTML extends React.Component {
         <link rel="mask-icon" href={`${safarisvg}`} color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#663399"/>
+        <title>{this.props.title}</title>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -45,6 +46,8 @@ export default class HTML extends React.Component {
           
           document.body.addEventListener('DOMSubtreeModified', removeLoadingStaticQuery);  
           function removeLoadingStaticQuery() {
+          console.log("props"+${this.props})  
+          document.title="${this.props.title}";  
           var x = document.getElementsByTagName('div');
           for(var i=0;i<x.length;i++) {
             if(x[i].innerHTML === "Loading (StaticQuery)") {
